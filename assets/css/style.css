@@ -2,10 +2,8 @@
 @import "slider.css";
 @import "navigation.css";
 @import "home_modules.css";
-@import "about_modules.css";
-@import "contact_modules.css";
+@import "contact_about_modules.css";
 @import "services_modules.css";
-@import "service_widget.css";
 
 /* New Module Imports */
 @import "blog_modules.css";
