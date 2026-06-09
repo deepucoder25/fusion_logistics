@@ -98,6 +98,8 @@
       <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav d-none d-lg-flex align-items-center gap-4">
         <a href="<?= site_url() ?>" class="nav-link<?= $active_tab === 'home' ? ' active' : '' ?>">Home</a>
+        
+        <!-- About Us Dropdown -->
         <div class="nav-item dropdown">
           <a href="<?= site_url('about-us') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'about' ? ' active' : '' ?>">About Us <i class="bi bi-chevron-down ms-1"></i></a>
           <ul class="dropdown-menu">
@@ -107,6 +109,8 @@
             <li><a class="dropdown-item<?= $segment1 === 'testimonials' ? ' active' : '' ?>" href="<?= site_url('testimonials') ?>">Testimonial</a></li>
           </ul>
         </div>
+
+        <!-- Services Dropdown -->
         <div class="nav-item dropdown">
           <a href="<?= site_url('our-services') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'services' ? ' active' : '' ?>">Services <i class="bi bi-chevron-down ms-1"></i></a>
           <ul class="dropdown-menu">
@@ -118,23 +122,35 @@
             <li><a class="dropdown-item<?= $segment1 === 'domestic-relocation' ? ' active' : '' ?>" href="<?= site_url('domestic-relocation') ?>">Domestic Relocation</a></li>
             <li><a class="dropdown-item<?= $segment1 === 'international-shifting' ? ' active' : '' ?>" href="<?= site_url('international-shifting') ?>">International Shifting</a></li>
             <li><a class="dropdown-item<?= $segment1 === 'corporate-shifting' ? ' active' : '' ?>" href="<?= site_url('corporate-shifting') ?>">Corporate Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'intercity-shifting' ? ' active' : '' ?>" href="<?= site_url('intercity-shifting') ?>">Intercity Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'local-shifting' ? ' active' : '' ?>" href="<?= site_url('local-shifting') ?>">Local Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'logistic-services' ? ' active' : '' ?>" href="<?= site_url('logistic-services') ?>">Logistic Services</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'pet-relocation' ? ' active' : '' ?>" href="<?= site_url('pet-relocation') ?>">Pet Relocation</a></li>
           </ul>
         </div>
-        <a href="<?= site_url('our-branches') ?>" class="nav-link<?= $active_tab === 'locations' ? ' active' : '' ?>">Locations</a>
-        <a href="<?= site_url('blog') ?>" class="nav-link<?= $active_tab === 'blog' ? ' active' : '' ?>">Blog</a>
+
+        <!-- Branches -->
+        <a href="<?= site_url('our-branches') ?>" class="nav-link<?= $active_tab === 'locations' ? ' active' : '' ?>">Branches</a>
+
+        <!-- Contact Us -->
         <a href="<?= site_url('contact-us') ?>" class="nav-link<?= $active_tab === 'contact' ? ' active' : '' ?>">Contact Us</a>
       </nav>
 
-      <!-- Header Action Buttons -->
+      <!-- Header Action Buttons & Widgets -->
       <div class="d-flex align-items-center gap-3">
+        <!-- Call Us Anytime Widget (Desktop only) -->
+        <a href="<?= $phonehtml ?>" class="call-us-widget d-none d-xl-flex align-items-center gap-2">
+          <div class="call-icon-wrap">
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div class="call-text-wrap d-flex flex-column">
+            <span class="call-label">Call Us Anytime</span>
+            <span class="call-value"><?= $phone ?></span>
+          </div>
+        </a>
+
         <!-- Get a Quote Button -->
-        <a href="#" class="btn-quote d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
-          <i class="bi bi-file-earmark-text"></i>
+        <a href="#" class="btn-quote-orange d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
           <span>Get a Quote</span>
+          <span class="btn-quote-icon">
+            <i class="bi bi-arrow-right-short"></i>
+          </span>
         </a>
 
         <!-- Hamburger for Mobile -->
@@ -157,10 +173,12 @@
 
       <!-- Navigation Accordion -->
       <div class="mobile-nav-list">
+        <!-- Home -->
         <div class="mobile-nav-item<?= $active_tab === 'home' ? ' active' : '' ?>">
           <a href="<?= site_url() ?>" class="mobile-nav-link">Home</a>
         </div>
         
+        <!-- About Us -->
         <div class="mobile-nav-item mobile-dropdown<?= $active_tab === 'about' ? ' active' : '' ?>">
           <button class="mobile-nav-link mobile-dropdown-toggle">
             <span>About Us</span>
@@ -174,6 +192,7 @@
           </div>
         </div>
 
+        <!-- Services -->
         <div class="mobile-nav-item mobile-dropdown<?= $active_tab === 'services' ? ' active' : '' ?>">
           <button class="mobile-nav-link mobile-dropdown-toggle">
             <span>Services</span>
@@ -188,19 +207,15 @@
             <a href="<?= site_url('domestic-relocation') ?>" class="<?= $segment1 === 'domestic-relocation' ? 'active' : '' ?>">Domestic Relocation</a>
             <a href="<?= site_url('international-shifting') ?>" class="<?= $segment1 === 'international-shifting' ? 'active' : '' ?>">International Shifting</a>
             <a href="<?= site_url('corporate-shifting') ?>" class="<?= $segment1 === 'corporate-shifting' ? 'active' : '' ?>">Corporate Shifting</a>
-            <a href="<?= site_url('intercity-shifting') ?>" class="<?= $segment1 === 'intercity-shifting' ? 'active' : '' ?>">Intercity Shifting</a>
-            <a href="<?= site_url('local-shifting') ?>" class="<?= $segment1 === 'local-shifting' ? 'active' : '' ?>">Local Shifting</a>
-            <a href="<?= site_url('logistic-services') ?>" class="<?= $segment1 === 'logistic-services' ? 'active' : '' ?>">Logistic Services</a>
-            <a href="<?= site_url('pet-relocation') ?>" class="<?= $segment1 === 'pet-relocation' ? 'active' : '' ?>">Pet Relocation</a>
           </div>
         </div>
 
+        <!-- Locations (Branches) -->
         <div class="mobile-nav-item<?= $active_tab === 'locations' ? ' active' : '' ?>">
-          <a href="<?= site_url('our-branches') ?>" class="mobile-nav-link">Locations</a>
+          <a href="<?= site_url('our-branches') ?>" class="mobile-nav-link">Locations (Branches)</a>
         </div>
-        <div class="mobile-nav-item<?= $active_tab === 'blog' ? ' active' : '' ?>">
-          <a href="<?= site_url('blog') ?>" class="mobile-nav-link">Blog</a>
-        </div>
+        
+        <!-- Contact Us -->
         <div class="mobile-nav-item<?= $active_tab === 'contact' ? ' active' : '' ?>">
           <a href="<?= site_url('contact-us') ?>" class="mobile-nav-link">Contact Us</a>
         </div>
