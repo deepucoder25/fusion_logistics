@@ -6,7 +6,7 @@
     <div class="footer-cta-card">
       <div class="cta-left-content">
         <div class="cta-image-box">
-          <img src="<?= base_url('assets/images/home_modules/cta_box.jpg') ?>" alt="Planning a Move - <?= !empty($company3) ? $company3 : 'Fusion Logistics' ?>">
+          <img src="<?= base_url('assets/images/home_modules/cta_box.jpg') ?>" alt="Planning a Move - <?= $company3 ?>" loading="lazy">
         </div>
         <div class="cta-text-content">
           <h3 class="cta-title">Planning a Move?</h3>
@@ -50,7 +50,7 @@
       <!-- Brand & Socials -->
       <div class="col-lg-3 col-md-6">
         <a href="<?= site_url() ?>" class="footer-brand-logo-wrap">
-          <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?> Logo">
+          <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?> Logo" loading="lazy">
         </a>
         <p class="footer-brand-desc">
           End-to-end logistics and supply chain solutions designed for speed, safety, and reliability. As your trusted packers and movers partner, we offer secure home shifting, office relocation, and vehicle transportation services across India.
@@ -216,7 +216,7 @@
         <!-- Copyright Section -->
         <div class="footer-copyright-wrap">
           <div class="skyline-wrapper">
-            <img src="<?= base_url('assets/images/home_modules/footer_design.jpg') ?>" alt="Skyline Logistics" class="skyline-img">
+            <img src="<?= base_url('assets/images/home_modules/footer_design.jpg') ?>" alt="<?= $company3 ?> skyline" class="skyline-img" loading="lazy">
           </div>
           <p class="footer-copyright-text">
             &copy; <?= $company3 ?>. All Rights Reserved.

@@ -1,6 +1,5 @@
 <body>
   <?php
-  $megaWhatsappLink = !empty($whatsapphtml) ? $whatsapphtml : '#';
 
   $ci =& get_instance();
   $class = strtolower($ci->router->fetch_class());
@@ -92,7 +91,7 @@
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap">
-        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo">
+        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo" loading="lazy">
       </a>
 
       <!-- Desktop Navigation Menu -->
