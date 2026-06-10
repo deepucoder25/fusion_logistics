@@ -1,8 +1,15 @@
   <div class="hero-quote-card-container">
             <!-- Card Header -->
             <div class="hero-quote-header">
-              <h3 class="hero-quote-title">Get Your Best Moving Quote</h3>
-              <p class="hero-quote-subtitle">Quick, Fast & Free Estimates</p>
+              <div class="hero-quote-header-flex">
+                <div class="quote-header-icon-wrap">
+                  <i class="bi bi-truck hero-animated-icon"></i>
+                </div>
+                <div class="quote-header-text-wrap">
+                  <h3 class="hero-quote-title">Get Your Best Moving Quote</h3>
+                  <p class="hero-quote-subtitle">Quick, Fast & Free Estimates</p>
+                </div>
+              </div>
             </div>
             
             <div class="hero-quote-white-card">
@@ -31,6 +38,7 @@
                     
                     <!-- Select Service -->
                     <div class="input-wrap-custom select-wrap-custom">
+                      <i class="bi bi-box-seam input-icon-custom"></i>
                       <span class="select-label-custom">Select Service</span>
                       <select name="mtype" class="form-select-custom" >
                         <option value="" disabled selected>Select Service</option>
@@ -39,6 +47,7 @@
                         <option>Car/Bike Shifting</option>
                         <option>Warehousing</option>
                       </select>
+                      <i class="bi bi-chevron-down select-icon-custom"></i>
                     </div>
                     
                     <!-- Moving From -->
@@ -63,47 +72,6 @@
                   
                   <div id="quoteformresults"></div>
                 </form>
-              </div>
-              
-              <!-- Card Footer / Trust Badge Bar (Desktop Only) -->
-              <div class="card-footer-trust d-none d-lg-flex justify-content-between align-items-center">
-                <div class="trust-item">
-                  <i class="bi bi-shield-check trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>100% Secure</strong>
-                    <span>Your data is safe with us</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-clock trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>Quick Response</strong>
-                    <span>We respond within 15 mins</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-currency-rupee trust-icon-circle"></i>
-                  <div class="trust-text">
-                    <strong>Best Price Guarantee</strong>
-                    <span>Get the most competitive rates</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-headset trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>24/7 Support</strong>
-                    <span>We are here to help</span>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Mobile Security Tag (Mobile Only, Inside the Card) -->
-              <div class="mobile-security-tag d-flex d-lg-none justify-content-center align-items-center gap-2 py-3">
-                <i class="bi bi-shield-check text-primary"></i>
-                <span>100% Secure. We never share your data.</span>
               </div>
             </div>
 
