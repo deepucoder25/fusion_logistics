@@ -1,335 +1,282 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-// Fallback dynamic variables if not set in controllers or MX_Controller
-$companyName = isset($company3) ? $company3 : 'MyCompany';
-?>
+<section class="testimonial-section-custom py-5">
+  <div class="container position-relative">
+    
+    <!-- Background quotes/dots decor -->
+    <div class="testimonial-decor-quote">“</div>
+    <div class="testimonial-decor-dots"></div>
 
-<section class="reviews-section py-5">
-    <!-- Background Decor Elements -->
-    <div class="reviews-decor decor-top-left"></div>
-    <div class="reviews-decor decor-bottom-right"></div>
-
-    <div class="container position-relative about-z2">
-        
-        <!-- Header -->
-        <div class="reviews-header-wrap text-center mb-4">
-            
-            <!-- Graphic Speech Bubble & Stars SVG -->
-            <svg width="80" height="50" viewBox="0 0 80 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="reviews-header-icon mb-2">
-                <!-- Stars on Left -->
-                <path d="M12 18 L13.5 21 L16.5 21.2 L14.2 23.2 L15 26.2 L12 24.5 L9 26.2 L9.8 23.2 L7.5 21.2 L10.5 21 Z" fill="#0a4ebd" opacity="0.3"/>
-                <path d="M22 10 L23 12 L25 12.1 L23.5 13.5 L24 15.5 L22 14.3 L20 15.5 L20.5 13.5 L19 12.1 L21 12 Z" fill="#0a4ebd" opacity="0.6"/>
-                <path d="M15 32 L15.8 33.5 L17.5 33.6 L16.2 34.7 L16.6 36.3 L15 35.3 L13.4 36.3 L13.8 34.7 L12.5 33.6 L14.2 33.5 Z" fill="#0a4ebd" opacity="0.4"/>
-                
-                <!-- Stars on Right -->
-                <path d="M68 18 L69.5 21 L72.5 21.2 L70.2 23.2 L71 26.2 L68 24.5 L65 26.2 L65.8 23.2 L63.5 21.2 L66.5 21 Z" fill="#0a4ebd" opacity="0.3"/>
-                <path d="M58 10 L59 12 L61 12.1 L59.5 13.5 L60 15.5 L58 14.3 L56 15.5 L56.5 13.5 L55 12.1 L57 12 Z" fill="#0a4ebd" opacity="0.6"/>
-                <path d="M65 32 L65.8 33.5 L67.5 33.6 L66.2 34.7 L66.6 36.3 L65 35.3 L63.4 36.3 L63.8 34.7 L62.5 33.6 L64.2 33.5 Z" fill="#0a4ebd" opacity="0.4"/>
-
-                <!-- Main Speech Bubble Outer (small) -->
-                <path d="M48 28 C48 31.5 44.5 34 40.5 34 C39.5 34 38.5 33.8 37.5 33.5 L34 35.5 L34.5 32.5 C33.5 31.5 33 30 33 28 C33 24.5 36.5 22 40.5 22 C44.5 22 48 24.5 48 28 Z" stroke="#0a4ebd" stroke-width="2" fill="#ffffff"/>
-                
-                <!-- Main Speech Bubble (large) -->
-                <circle cx="36" cy="22" r="14" fill="#ffffff" stroke="#0a4ebd" stroke-width="2"/>
-                <!-- Star in Main Bubble -->
-                <path d="M36 15 L38.2 19.5 L43 20.2 L39.5 23.6 L40.3 28.4 L36 26.1 L31.7 28.4 L32.5 23.6 L29 20.2 L33.8 19.5 Z" fill="#0a4ebd"/>
-            </svg>
-
-            <!-- Pill Badge -->
-            <div class="reviews-badge-container d-flex align-items-center justify-content-center mb-2">
-                <span class="badge-line line-left"></span>
-                <span class="reviews-pill-badge">REVIEWS</span>
-                <span class="badge-line line-right"></span>
-            </div>
-
-            <!-- Title & Truck Divider -->
-            <h2 class="reviews-section-title">What Our Customers Say</h2>
-            <div class="reviews-title-truck-wrap">
-                <div class="truck-icon-container">
-                    <span class="speed-line line-1"></span>
-                    <span class="speed-line line-2"></span>
-                    <span class="speed-line line-3"></span>
-                    <i class="bi bi-truck truck-icon"></i>
-                </div>
-            </div>
-            
-            <p class="reviews-section-subtitle">
-                Real experiences from our happy customers who trust us for their relocation and transportation needs.
-            </p>
-        </div>
-
-        <!-- Slider Section -->
-        <div class="reviews-slider-container position-relative mb-4">
-            
-            <!-- Left Arrow Button -->
-            <button class="slider-arrow prev-arrow" id="rev-prev-btn" aria-label="Previous review">
-                <i class="bi bi-chevron-left"></i>
-            </button>
-
-            <!-- Slider Viewport -->
-            <div class="reviews-slider-viewport">
-                <div class="reviews-slider-track" id="rev-slider-track">
-                    
-                    <!-- Card 1: Rohit Sharma -->
-                    <div class="review-card">
-                        <!-- Top quote decoration -->
-                        <span class="quote-decor top-quote"><i class="bi bi-quote"></i></span>
-                        
-                        <!-- Stars -->
-                        <div class="review-stars mb-3">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-
-                        <!-- User Profile Info -->
-                        <div class="review-user-row d-flex align-items-center mb-3">
-                            <img src="<?= base_url('assets/images/reviews/rohit.webp') ?>" 
-                                 alt="Rohit Sharma Relocation Review" 
-                                 class="review-avatar img-fluid">
-                            <div class="review-user-details">
-                                <h3 class="review-username">
-                                    Rohit Sharma <i class="bi bi-patch-check-fill verified-badge"></i>
-                                </h3>
-                                <span class="review-location">
-                                    <i class="bi bi-geo-alt-fill location-icon"></i> Bengaluru, India
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Content -->
-                        <p class="review-text">
-                            Excellent bike transportation service! My bike was delivered safely and on time. Very professional team.
-                        </p>
-
-                        <!-- Bottom quote decoration -->
-                        <span class="quote-decor bottom-quote"><i class="bi bi-quote"></i></span>
-                    </div>
-
-                    <!-- Card 2: Priya Mehta -->
-                    <div class="review-card">
-                        <!-- Top quote decoration -->
-                        <span class="quote-decor top-quote"><i class="bi bi-quote"></i></span>
-                        
-                        <!-- Stars -->
-                        <div class="review-stars mb-3">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-
-                        <!-- User Profile Info -->
-                        <div class="review-user-row d-flex align-items-center mb-3">
-                            <!-- SVG Avatar for Priya Mehta -->
-                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="review-avatar-svg review-avatar">
-                                <circle cx="30" cy="30" r="30" fill="url(#priyaGrad)"/>
-                                <path d="M12 28 C 12 15, 48 15, 48 28 C 48 38, 44 48, 44 48 L 16 48 C 16 48, 12 38, 12 28 Z" fill="#2d1c18"/>
-                                <circle cx="30" cy="27" r="11" fill="#fed8cc"/>
-                                <path d="M19 22 C 22 17, 38 17, 41 22 C 43 25, 40 20, 30 20 C 20 20, 17 25, 19 22 Z" fill="#2d1c18"/>
-                                <path d="M19 22 C 19 22, 23 23, 25 26 C 25 26, 22 25, 19 22 Z" fill="#2d1c18"/>
-                                <path d="M41 22 C 41 22, 37 23, 35 26 C 35 26, 38 25, 41 22 Z" fill="#2d1c18"/>
-                                <path d="M16 48 C 16 39, 44 39, 44 48" fill="#e85b82" stroke="#fed8cc" stroke-width="1.5"/>
-                                <defs>
-                                    <linearGradient id="priyaGrad" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-                                        <stop offset="0%" stop-color="#ffa0bd"/>
-                                        <stop offset="100%" stop-color="#ff608d"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <div class="review-user-details">
-                                <h3 class="review-username">
-                                    Priya Mehta <i class="bi bi-patch-check-fill verified-badge"></i>
-                                </h3>
-                                <span class="review-location">
-                                    <i class="bi bi-geo-alt-fill location-icon"></i> Mumbai, India
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Content -->
-                        <p class="review-text">
-                            Smooth car transportation experience. The team kept me updated throughout the process. Highly recommended!
-                        </p>
-
-                        <!-- Bottom quote decoration -->
-                        <span class="quote-decor bottom-quote"><i class="bi bi-quote"></i></span>
-                    </div>
-
-                    <!-- Card 3: Amit Verma -->
-                    <div class="review-card">
-                        <!-- Top quote decoration -->
-                        <span class="quote-decor top-quote"><i class="bi bi-quote"></i></span>
-                        
-                        <!-- Stars -->
-                        <div class="review-stars mb-3">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-
-                        <!-- User Profile Info -->
-                        <div class="review-user-row d-flex align-items-center mb-3">
-                            <!-- SVG Avatar for Amit Verma -->
-                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="review-avatar-svg review-avatar">
-                                <circle cx="30" cy="30" r="30" fill="url(#amitGrad)"/>
-                                <circle cx="30" cy="26" r="11" fill="#fedcbe"/>
-                                <path d="M19 22 C 19 16, 41 16, 41 22 C 41 14, 19 14, 19 22 Z" fill="#1f2421"/>
-                                <path d="M19 22 C 22 18, 38 18, 41 22" stroke="#1f2421" stroke-width="3" stroke-linecap="round"/>
-                                <rect x="22" y="23" width="7" height="5" rx="2" stroke="#1f2421" stroke-width="1.5" fill="none"/>
-                                <rect x="31" y="23" width="7" height="5" rx="2" stroke="#1f2421" stroke-width="1.5" fill="none"/>
-                                <line x1="29" y1="25" x2="31" y2="25" stroke="#1f2421" stroke-width="1.5"/>
-                                <path d="M16 48 C 16 39, 44 39, 44 48" fill="#0a4ebd" stroke="#fedcbe" stroke-width="1.5"/>
-                                <defs>
-                                    <linearGradient id="amitGrad" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-                                        <stop offset="0%" stop-color="#6fa3fb"/>
-                                        <stop offset="100%" stop-color="#0a4ebd"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <div class="review-user-details">
-                                <h3 class="review-username">
-                                    Amit Verma <i class="bi bi-patch-check-fill verified-badge"></i>
-                                </h3>
-                                <span class="review-location">
-                                    <i class="bi bi-geo-alt-fill location-icon"></i> Delhi, India
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Content -->
-                        <p class="review-text">
-                            Our office relocation was seamless and well-organized. Great service and very cooperative staff.
-                        </p>
-
-                        <!-- Bottom quote decoration -->
-                        <span class="quote-decor bottom-quote"><i class="bi bi-quote"></i></span>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Right Arrow Button -->
-            <button class="slider-arrow next-arrow" id="rev-next-btn" aria-label="Next review">
-                <i class="bi bi-chevron-right"></i>
-            </button>
-
-        </div>
-
-        <!-- Bottom Trust/Rating Bar -->
-        <div class="reviews-trust-bar mx-auto">
-            <div class="row align-items-center g-3 text-center text-md-start">
-                
-                <!-- Stat 1 -->
-                <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center justify-content-md-start">
-                    <div class="trust-stat-item d-flex align-items-center">
-                        <div class="trust-icon-box box-star shadow-sm">
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <div class="trust-text-box">
-                            <h4 class="trust-value">4.9/5</h4>
-                            <span class="trust-label">Average Rating</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Stat 2 -->
-                <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center justify-content-md-start">
-                    <div class="trust-stat-item d-flex align-items-center">
-                        <div class="trust-icon-box box-users shadow-sm">
-                            <i class="bi bi-people-fill"></i>
-                        </div>
-                        <div class="trust-text-box">
-                            <h4 class="trust-value">10,000+</h4>
-                            <span class="trust-label">Hiappy Customers</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Stat 3 -->
-                <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center justify-content-md-start">
-                    <div class="trust-stat-item d-flex align-items-center">
-                        <div class="trust-icon-box box-shield shadow-sm">
-                            <i class="bi bi-shield-fill-check"></i>
-                        </div>
-                        <div class="trust-text-box">
-                            <h4 class="trust-value">100%</h4>
-                            <span class="trust-label">Veritied-Reviews.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Stat 4 -->
-                <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center justify-content-md-start">
-                    <div class="trust-stat-item d-flex align-items-center">
-                        <div class="trust-icon-box box-recommend shadow-sm">
-                            <i class="bi bi-chat-right-quote-fill"></i>
-                        </div>
-                        <div class="trust-text-box">
-                            <h4 class="trust-value">98%</h4>
-                            <span class="trust-label">Woud Recomand Us</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+    <!-- Section Header -->
+    <div class="testimonial-header text-center mb-5">
+      <div class="testimonial-badge-wrap mb-2">
+        <span class="testimonial-badge-text">★ WHAT CLIENTS SAY ★</span>
+      </div>
+      <h2 class="testimonial-main-title mt-3">
+        Their Experience, <span>Our Pride</span>
+      </h2>
+      <p class="testimonial-subtitle mt-2">
+        Real stories from real customers who trusted us with their move.
+      </p>
     </div>
+
+    <!-- Testimonials Grid Container -->
+    <div class="testimonial-grid-container position-relative">
+      <div class="row g-4 align-items-stretch">
+        
+        <!-- Left Column: Large Dark Card -->
+        <div class="col-lg-6">
+          <div class="testimonial-main-card-dark position-relative h-100">
+            
+            <!-- Floating Top Quote Badge -->
+            <div class="floating-quote-badge-orange">”</div>
+
+            <div class="row g-0 align-items-stretch h-100">
+              <!-- Family Photo -->
+              <div class="col-md-5 main-card-photo-col">
+                <div class="main-card-photo-wrap">
+                  <div class="image-quote-watermark">“</div>
+                  <img src="<?= base_url('assets/images/reviews/family.jpg') ?>" alt="<?= $company3 ?> Family" loading="lazy">
+                </div>
+              </div>
+              
+              <!-- Review Text & Author Info -->
+              <div class="col-md-7 d-flex flex-column justify-content-between p-4 p-md-5">
+                <div>
+                  <p class="card-text-content-white">
+                    <span class="orange-quote-inline">“</span>Fusion Logistics made our home shifting so easy and stress-free. Everything was handled with care and delivered on time. Highly recommended!
+                  </p>
+                </div>
+
+                <div class="card-author-footer-dark">
+                  <div class="dark-divider mb-3"></div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap mb-1">
+                    <h4 class="profile-name text-white mb-0">Rahul Mehta</h4>
+                    <div class="card-stars-gold">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="profile-location-dark">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Bangalore</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Middle Column: Decorative Connector (Hidden on Mobile/Tablet) -->
+        <div class="col-lg-1 d-none d-lg-block position-relative">
+          <div class="testimonial-connector-wrap">
+            <svg class="connector-svg" width="120" height="260" viewBox="0 0 120 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M60 10
+                     C110 40, 110 90, 60 120
+                     C10 150, 10 200, 60 250"
+                  stroke="#FF6B35"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="4 8"
+                  fill="none"/>
+              
+              <!-- Orange dots -->
+              <circle cx="60" cy="10" r="4" fill="#FF6B35"/>
+              <circle cx="60" cy="120" r="4" fill="#FF6B35"/>
+              <circle cx="60" cy="250" r="4" fill="#FF6B35"/>
+            </svg>
+            
+            <div class="connector-icons-list">
+              <!-- Icon 1: Custom Speach Bubble with Stars -->
+              <div class="connector-icon-circle top-circle" title="Highly Rated">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  <path d="M7.5 11l.4.8.9.1-.6.6.1.9-.8-.4-.8.4.1-.9-.6-.6.9-.1.4-.8z" fill="currentColor" stroke="none" />
+                  <path d="M12 11l.4.8.9.1-.6.6.1.9-.8-.4-.8.4.1-.9-.6-.6.9-.1.4-.8z" fill="currentColor" stroke="none" />
+                  <path d="M16.5 11l.4.8.9.1-.6.6.1.9-.8-.4-.8.4.1-.9-.6-.6.9-.1.4-.8z" fill="currentColor" stroke="none" />
+                </svg>
+              </div>
+              <!-- Icon 2: Custom Speed Truck -->
+              <div class="connector-icon-circle middle-circle" title="Safe Delivery">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="2" y1="8" x2="6" y2="8" />
+                  <line x1="1" y1="12" x2="4" y2="12" />
+                  <line x1="2" y1="16" x2="5" y2="16" />
+                  <rect x="7" y="6" width="9" height="11" rx="1" />
+                  <path d="M16 8h4l3 3v6h-7V8z" />
+                  <circle cx="10" cy="19" r="2" />
+                  <circle cx="19" cy="19" r="2" />
+                </svg>
+              </div>
+              <!-- Icon 3: Isometric Moving Box -->
+              <div class="connector-icon-circle bottom-circle" title="Secure Packaging">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 7v10" />
+                  <path d="M12 12v10" />
+                  <path d="M22 7v10" />
+                  <path d="M12 2.2v5" stroke-dasharray="1 1" />
+                  <path d="M7 9.5l2-1 2 1" />
+                  <path d="M7 11.5l2-1 2 1" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Stacked Light Cards with Scroll Support -->
+        <div class="col-lg-5">
+          <div class="testimonial-right-scroll-container">
+            
+            <!-- Card 2: Amit Verma -->
+            <div id="card-amit" class="review-card-right-light position-relative">
+              <!-- Floating Right Quote Badge -->
+              <div class="floating-quote-badge-right-orange">”</div>
+              
+              <p class="card-text-content-light">
+                <span class="light-quote-inline">“</span>Very professional and reliable team. They packed everything securely and ensured timely delivery. Great experience!
+              </p>
+              
+              <div class="light-divider mb-3"></div>
+              
+              <div class="card-profile-footer-light">
+                <div class="profile-info-left">
+                  <div class="profile-avatar-icon-light profile-avatar-orange">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div class="profile-details">
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <h4 class="profile-name">Amit Verma</h4>
+                      <div class="card-stars-gold-small">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                    <div class="profile-location">
+                      <i class="bi bi-geo-alt-fill"></i>
+                      <span>Mumbai</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Priya Sharma -->
+            <div id="card-priya" class="review-card-right-light position-relative">
+              <!-- Floating Right Quote Badge -->
+              <div class="floating-quote-badge-right-navy">”</div>
+              
+              <p class="card-text-content-light">
+                <span class="light-quote-inline">“</span>From start to finish, the service was excellent. The team was punctual, polite, and took great care of our belongings.
+              </p>
+              
+              <div class="light-divider mb-3"></div>
+              
+              <div class="card-profile-footer-light">
+                <div class="profile-info-left">
+                  <div class="profile-avatar-icon-light profile-avatar-navy">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div class="profile-details">
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <h4 class="profile-name">Priya Sharma</h4>
+                      <div class="card-stars-gold-small">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                    <div class="profile-location">
+                      <i class="bi bi-geo-alt-fill"></i>
+                      <span>Delhi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Navigation Buttons (using scrollBy to prevent main page scrolling) -->
+          <div class="testimonial-scroll-nav d-flex d-lg-none">
+            <a href="#" class="testimonial-scroll-btn" onclick="const c = this.closest('.col-lg-5').querySelector('.testimonial-right-scroll-container'); c.scrollBy({ left: -c.clientWidth, top: -c.clientHeight, behavior: 'smooth' }); return false;" title="Previous Review">
+              <i class="bi bi-chevron-left"></i>
+            </a>
+            <a href="#" class="testimonial-scroll-btn" onclick="const c = this.closest('.col-lg-5').querySelector('.testimonial-right-scroll-container'); c.scrollBy({ left: c.clientWidth, top: c.clientHeight, behavior: 'smooth' }); return false;" title="Next Review">
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Stats Bar -->
+    <div class="testimonial-stats-bar mt-5">
+      <div class="row g-4 align-items-center justify-content-between">
+        <!-- Stat 1 -->
+        <div class="col-lg-3 col-md-3 col-6 stat-box-item-col">
+          <div class="stat-box-item">
+            <div class="stat-icon-wrap">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <div class="stat-text-wrap">
+              <span class="stat-number"><?= $happyClients ?></span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+          </div>
+        </div>
+        <!-- Stat 2 -->
+        <div class="col-lg-3 col-md-3 col-6 stat-box-item-col">
+          <div class="stat-box-item">
+            <div class="stat-icon-wrap">
+              <i class="bi bi-shield-fill-check"></i>
+            </div>
+            <div class="stat-text-wrap">
+              <span class="stat-number">99.8%</span>
+              <span class="stat-label">On-Time Delivery</span>
+            </div>
+          </div>
+        </div>
+        <!-- Stat 3 -->
+        <div class="col-lg-3 col-md-3 col-6 stat-box-item-col">
+          <div class="stat-box-item">
+            <div class="stat-icon-wrap">
+              <i class="bi bi-box-seam-fill"></i>
+            </div>
+            <div class="stat-text-wrap">
+              <span class="stat-number"><?= $successfulMoves ?></span> 
+              <span class="stat-label">Successful Moves</span>
+            </div>
+          </div>
+        </div>
+        <!-- Stat 4 -->
+        <div class="col-lg-3 col-md-3 col-6 stat-box-item-col">
+          <div class="stat-box-item">
+            <div class="stat-icon-wrap">
+              <i class="bi bi-headset"></i>
+            </div>
+            <div class="stat-text-wrap">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Customer Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- Inline JavaScript for Touch & Click Slide Actions -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const track = document.getElementById('rev-slider-track');
-    const prevBtn = document.getElementById('rev-prev-btn');
-    const nextBtn = document.getElementById('rev-next-btn');
-    let currentIndex = 0;
-    const cardCount = track.children.length;
-    
-    function updateSlider(index) {
-        if (index < 0) index = 0;
-        if (index >= cardCount) index = cardCount - 1;
-        
-        currentIndex = index;
-        
-        // Calculate sliding position based on dynamic element widths
-        const cardWidth = track.children[0].offsetWidth;
-        const gap = 20; // Matches grid gap
-        track.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
-        
-        // Arrow opacities
-        prevBtn.style.opacity = currentIndex === 0 ? '0.35' : '1';
-        nextBtn.style.opacity = currentIndex === cardCount - 1 ? '0.35' : '1';
-    }
-    
-    if (prevBtn && nextBtn && track) {
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) updateSlider(currentIndex - 1);
-        });
-        
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < cardCount - 1) updateSlider(currentIndex + 1);
-        });
-        
-        // Reset translation on window resizing for desktop static display
-        window.addEventListener('resize', () => {
-            if (window.innerWidth >= 992) {
-                track.style.transform = 'none';
-            } else {
-                updateSlider(currentIndex);
-            }
-        });
-        
-        // Initialize
-        if (window.innerWidth < 992) {
-            updateSlider(0);
-        }
-    }
-});
-</script>
+

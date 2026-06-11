@@ -81,6 +81,7 @@ class MX_Controller
         $this->comp['startYear'] = "2011";
 
         $this->comp['happyClients'] = "20,000+";
+        $this->comp['successfulMoves'] = "20,000+";
         $this->comp['yearsExperience'] = "15+";
         $this->comp['secureShifting'] = "100%";
         $this->comp['statesCovered'] = "12+";
