@@ -1,126 +1,220 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Fetch site-wide dynamic company settings (loaded from MX_Controller or system context)
-$companyName = isset($company3) ? $company3 : 'MyCompany';
-$companyPhone = isset($phone) ? $phone : '+91 ';
-$companyPhoneHtml = isset($phonehtml) ? $phonehtml : 'tel:+';
-$companyEmail = isset($mail) ? $mail : '';
-$companyEmailHtml = isset($mailhtml) ? $mailhtml : '';
-$companyExperience = isset($experience) ? $experience : '';
-$companyLocation = isset($addressRegion) ? $addressRegion : '';
-$companyState = isset($companystate) ? $companystate : '';
+$src_about = "C:\\Users\\Deepali Kumari\\.gemini\\antigravity-ide\\brain\\9d721dd2-2a86-426e-b1ca-7c1d92f1059e\\about_delivery_handshake_1781240416732.png";
+$dest_about = "assets/images/about/about-showcase.png";
+if (file_exists($src_about) && !file_exists($dest_about)) {
+    if (!is_dir('assets/images/about')) {
+        @mkdir('assets/images/about', 0777, true);
+    }
+    @copy($src_about, $dest_about);
+}
 ?>
 
-<section class="about-section py-5">
-    <!-- Background Decor Grid Patterns -->
-    <div class="about-decor decor-top-right"></div>
-    <div class="about-decor decor-bottom-left"></div>
+<section class="about-section py-5 position-relative">
+    <div class="about-decor decor-top-right d-none d-md-block"></div>
+    <div class="about-decor decor-bottom-left d-none d-md-block"></div>
+    <div class="values-dots-pattern d-none d-lg-block"></div>
+    
+    <div class="container position-relative z-2">
+        <!-- About Content and Image Row -->
+        <div class="row align-items-center g-5 mb-5">
+            <!-- Left Side: Content Details -->
+            <div class="col-lg-6 col-12">
+                <div class="about-content">
+                    <div class="about-subheading d-flex align-items-center mb-3">
+                        <span class="sub-line"></span>
+                        <span class="sub-text">ABOUT US</span>
+                        <span class="sub-line"></span>
+                    </div>
 
-    <div class="container position-relative about-z2">
-        <div class="row align-items-center g-4 g-lg-5">
-            
-            <!-- Left Side: Image Showcase -->
+                    <h2 class="about-main-title mb-4">
+                        Delivering More Than <span class="text-accent">Just Shipments</span>
+                    </h2>
+
+                    <p class="about-description mb-4">
+                        At <?= $company3 ?>, we believe in delivering trust, efficiency, and excellence with every shipment. With a strong network, advanced technology, and a customer-first approach, we ensure your goods reach their destination safely and on time.
+                    </p>
+
+                    <!-- Features Row -->
+                    <div class="row g-3">
+                        <div class="col-md-4 col-12">
+                            <div class="about-mini-feature">
+                                <div class="mini-icon-wrap">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+                                <div class="mini-text-wrap">
+                                    <h4 class="mini-title">Customer First</h4>
+                                    <p class="mini-desc">We prioritize your needs and deliver beyond expectations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="about-mini-feature">
+                                <div class="mini-icon-wrap">
+                                    <i class="bi bi-shield-fill-check"></i>
+                                </div>
+                                <div class="mini-text-wrap">
+                                    <h4 class="mini-title">Safe & Secure</h4>
+                                    <p class="mini-desc">Your goods are protected with the highest standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="about-mini-feature">
+                                <div class="mini-icon-wrap">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div class="mini-text-wrap">
+                                    <h4 class="mini-title">On-Time Delivery</h4>
+                                    <p class="mini-desc">We value time and ensure prompt deliveries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Image Showcase -->
             <div class="col-lg-6 col-12">
                 <div class="about-image-wrap position-relative">
-                    <div class="about-img-bg-shape"></div>
-                    <img src="<?= base_url('assets/images/about/about-showcase.webp') ?>" 
-                         alt="Reliable Packers and Movers Service - <?= htmlspecialchars($companyName) ?>" 
-                         class="about-img img-fluid rounded-4 shadow-lg position-relative about-z2" 
+                    <img src="<?= base_url('assets/images/home_modules/about_showcase.jpg') ?>" 
+                         alt="Reliable Logistics Service - <?= $company3 ?>" 
+                         class="about-img img-fluid shadow-lg" 
                          loading="lazy">
                     
                     <!-- Floating Experience Badge -->
-                    <div class="about-experience-badge d-flex align-items-center shadow-lg">
-                        <div class="exp-number"><?= htmlspecialchars($companyExperience) ?></div>
-                        <div class="exp-text">
-                            <span class="d-block text-uppercase font-weight-bold">Years of</span>
-                            <span class="d-block text-uppercase">Trusted service</span>
+                    <div class="about-experience-badge shadow-lg">
+                        <div class="badge-icon-wrap">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="badge-text-wrap">
+                            <span class="badge-number"><?= $experience ?> Years of</span>
+                            <span class="badge-label">Logistics Excellence</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Right Side: Content Details -->
-            <div class="col-lg-6 col-12">
-                <div class="about-content">
-                    
-                    <!-- Subheading Badge -->
-                    <div class="about-badge-wrap d-flex align-items-center mb-3">
-                        <span class="about-badge-line"></span>
-                        <span class="about-pill-badge text-uppercase">Who We Are</span>
-                    </div>
-
-                    <!-- SEO-Friendly Heading -->
-                    <h2 class="about-title mb-3">
-                        Reliable Shifting &amp; Relocation Services by <span class="text-primary-blue"><?= htmlspecialchars($companyName) ?></span>
-                    </h2>
-
-                    <!-- Descriptive Paragraphs -->
-                    <p class="about-desc-lead mb-3">
-                        Moving to a new home, office, or transporting vehicles can feel overwhelming. At <strong><?= htmlspecialchars($companyName) ?></strong>, we are committed to making your relocation journey smooth, secure, and stress-free. Whether shifting locally within <?= htmlspecialchars($companyLocation) ?> or relocating across <?= htmlspecialchars($companyState) ?> and all over India, our team handles every aspect of your move with extreme care and precision.
-                    </p>
-                    
-                    <p class="about-desc mb-4">
-                        With over <strong><?= htmlspecialchars($companyExperience) ?> years</strong> of professional experience, we have established ourselves as one of India's most trusted packing and moving brands. We use industry-standard packaging materials, modern cargo carriers, and structured loading systems to ensure all your precious goods and vehicles reach their destination safely, on time, and damage-free.
-                    </p>
-
-                    <!-- Features List Grid -->
-                    <div class="row g-3 mb-4">
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-shield-check"></i>
-                                </div>
-                                <span class="feature-text">Fully Insured Shifting</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-truck"></i>
-                                </div>
-                                <span class="feature-text">Modern GPS Fleet</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-person-check"></i>
-                                </div>
-                                <span class="feature-text">Trained Packing Crew</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-clock-history"></i>
-                                </div>
-                                <span class="feature-text">On-Time Safe Delivery</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Call To Actions -->
-                    <div class="d-flex flex-wrap align-items-center gap-3">
-                        <a href="<?= site_url('about-us') ?>" class="btn btn-primary-blue shadow-sm d-flex align-items-center">
-                            Read More About Us
-                            <i class="bi bi-arrow-right-short ml-2 font-weight-bold about-cta-icon"></i>
-                        </a>
-                        <div class="about-contact-wrap d-flex align-items-center ml-md-4 mt-2 mt-md-0">
-                            <div class="about-contact-icon d-flex align-items-center justify-content-center">
-                                <i class="bi bi-telephone-fill"></i>
-                            </div>
-                            <div class="about-contact-details ml-2">
-                                <span class="d-block contact-label text-muted">Talk to an Expert</span>
-                                <a href="<?= htmlspecialchars($companyPhoneHtml) ?>" class="contact-number font-weight-bold text-decoration-none">
-                                    <?= htmlspecialchars($companyPhone) ?>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
+
+        <!-- Stats Counter Card Banner -->
+        <div class="about-counter-card py-4 px-3 mb-5">
+            <div class="row align-items-center text-center">
+                <div class="col-lg-3 col-sm-6 col-6 counter-col">
+                    <div class="counter-item">
+                        <div class="counter-icon-wrap">
+                            <i class="bi bi-box-seam-fill"></i>
+                        </div>
+                        <div class="counter-text-wrap">
+                            <h3 class="counter-number"><?= $successfulMoves ?></h3>
+                            <p class="counter-label">Shipments Delivered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 counter-col">
+                    <div class="counter-item">
+                        <div class="counter-icon-wrap">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <div class="counter-text-wrap">
+                            <h3 class="counter-number">500+</h3>
+                            <p class="counter-label">Cities Covered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 counter-col">
+                    <div class="counter-item">
+                        <div class="counter-icon-wrap">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="counter-text-wrap">
+                            <h3 class="counter-number"><?= $happyClients ?></h3>
+                            <p class="counter-label">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 counter-col">
+                    <div class="counter-item">
+                        <div class="counter-icon-wrap">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <div class="counter-text-wrap">
+                            <h3 class="counter-number">99.5%</h3>
+                            <p class="counter-label">On-Time Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUR VALUES Section -->
+        <div class="values-section mt-5 pt-3">
+            <div class="values-header text-center mb-5">
+                <div class="about-subheading d-flex align-items-center justify-content-center mb-3">
+                    <span class="sub-line"></span>
+                    <span class="sub-text">OUR VALUES</span>
+                    <span class="sub-line"></span>
+                </div>
+                <h2 class="about-main-title">The Principles That Drive Us</h2>
+            </div>
+
+            <div class="row g-4 values-row">
+                <div class="col-xl col-lg-4 col-sm-6 col-12">
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <i class="bi bi-shield-fill-check"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4 class="value-title">Integrity</h4>
+                            <p class="value-desc">We operate with honesty, transparency, and fairness in everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl col-lg-4 col-sm-6 col-12">
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4 class="value-title">Reliability</h4>
+                            <p class="value-desc">We deliver on our promises with consistency and accountability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl col-lg-4 col-sm-6 col-12">
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4 class="value-title">Excellence</h4>
+                            <p class="value-desc">We strive for excellence through innovation and continuous improvement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl col-lg-4 col-sm-6 col-12">
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <i class="bi bi-handshake-fill"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4 class="value-title">Teamwork</h4>
+                            <p class="value-desc">We believe in the power of collaboration to achieve greater success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl col-lg-4 col-sm-6 col-12">
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <i class="bi bi-leaf-fill"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4 class="value-title">Sustainability</h4>
+                            <p class="value-desc">We are committed to building a greener and better tomorrow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
