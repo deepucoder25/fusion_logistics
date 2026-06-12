@@ -83,7 +83,7 @@ $state = ucwords($state);
 </section>
     <div class="pm-list-service-page">
     <div class="container pm-list-feature-section">
-        <div class="row g-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
+        <div class="row g-2 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
             <?php
             $st = str_replace(" ", "-", $state);
             foreach ($cities as $ct) :

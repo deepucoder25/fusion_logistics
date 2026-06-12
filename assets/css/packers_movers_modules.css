@@ -940,6 +940,13 @@
         border: none !important;
         box-shadow: none !important;
     }
+    .city-content-card {
+        padding: 16px !important;
+        border-radius: 16px !important;
+    }
+    .city-faq-body {
+        padding-left: 20px !important;
+    }
     .pm-city-section-title {
         font-size: 1.75rem !important;
         margin-bottom: 16px !important;
@@ -951,6 +958,26 @@
     }
     .image-slider-slide img.slider-image {
         height: 240px !important;
+    }
+}
+
+/* Mobile Responsive Overrides for City List Grid (2-column layout) */
+@media (max-width: 575.98px) {
+    .pm-list-card-body {
+        padding: 8px 10px !important;
+        gap: 6px !important;
+    }
+    .pm-list-icon {
+        width: 26px !important;
+        height: 26px !important;
+        border-radius: 6px !important;
+        font-size: 12px !important;
+    }
+    .pm-list-city-name h5 {
+        font-size: 12px !important;
+    }
+    .pm-list-city-name h5 b {
+        font-size: 12.5px !important;
     }
 }
 

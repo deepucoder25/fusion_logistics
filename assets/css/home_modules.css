@@ -1686,7 +1686,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .faq-timeline-container {
+    .faq-accordion-list {
         padding-left: 0;
     }
 
@@ -1702,8 +1702,12 @@
         display: none !important;
     }
 
+    .faq-card-header {
+        padding: 16px 16px;
+    }
+
     .faq-card-body {
-        padding-left: 24px;
+        padding: 0 16px 16px 16px;
     }
 
     .faq-help-card {

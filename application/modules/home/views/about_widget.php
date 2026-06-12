@@ -182,7 +182,7 @@
                 <div class="col-xl col-lg-4 col-sm-6 col-12">
                     <div class="value-item">
                         <div class="value-icon-wrap">
-                            <i class="bi bi-handshake-fill"></i>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
                         </div>
                         <div class="value-content">
                             <h4 class="value-title">Teamwork</h4>
@@ -193,7 +193,7 @@
                 <div class="col-xl col-lg-4 col-sm-6 col-12">
                     <div class="value-item">
                         <div class="value-icon-wrap">
-                            <i class="bi bi-leaf-fill"></i>
+                            <i class="bi bi-globe-americas"></i>
                         </div>
                         <div class="value-content">
                             <h4 class="value-title">Sustainability</h4>

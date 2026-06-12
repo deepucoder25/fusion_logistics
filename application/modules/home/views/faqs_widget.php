@@ -89,7 +89,7 @@ $faqs = [
             </p>
         </div>
 
-        <div class="row g-5 align-items-stretch mt-2">
+        <div class="row g-4 g-lg-5 align-items-stretch mt-2">
             <div class="col-lg-5 col-12 d-flex">
                 <div class="faq-help-card position-relative overflow-hidden w-100">
                     <div class="faq-help-content position-relative z-3">
