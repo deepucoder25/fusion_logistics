@@ -1,40 +1,76 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
-    <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Warehouse &amp; Storage</span>
-        </nav>
-        <h1><span class="bc-title-white">Warehouse &amp;</span> <span class="bc-title-orange">Storage</span></h1>
-        <p class="bc-desc">Store your household or commercial goods in our CCTV-monitored, pest-controlled, fire-safe warehouse facilities. Flexible weekly, monthly, and long-term rental plans available.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-camera-video-fill"></i></div>
-                <div class="pill-text"><strong>CCTV 24/7</strong><small>Always monitored</small></div>
+<!-- Modern Breadcrumbs Hero Section -->
+<section class="service-breadcrumbs position-relative overflow-hidden py-4">
+    <div class="container position-relative z-2">
+        
+        <!-- Breadcrumb Pill Bar -->
+        <div class="bc-nav-wrapper mb-5">
+            <nav class="bc-nav-pill shadow-sm d-inline-flex align-items-center gap-2">
+                <a href="<?= site_url() ?>" class="bc-nav-item text-decoration-none">
+                    <i class="bi bi-house-door-fill"></i> Home
+                </a>
+                <span class="bc-nav-sep"><i class="bi bi-chevron-right"></i></span>
+                <span class="bc-nav-current">Warehouse &amp; Storage</span>
+            </nav>
+        </div>
+        
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 col-md-8 col-12">
+                <h1 class="bc-main-title fw-extrabold mb-3">Warehouse &amp; Storage</h1>
+                <p class="bc-desc mb-0">Store your household or commercial goods in our CCTV-monitored, pest-controlled, fire-safe warehouse facilities. Flexible weekly, monthly, and long-term rental plans available.</p>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-bug-fill"></i></div>
-                <div class="pill-text"><strong>Pest Control</strong><small>Regular treatment</small></div>
+            <!-- Right side column kept empty to let the background image showcase the truck & workers -->
+            <div class="col-lg-5 col-md-4 d-none d-md-block"></div>
+        </div>
+
+        <!-- Horizontal Features Row -->
+        <div class="row bc-features-row mt-5 pt-3">
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-camera-video-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">CCTV 24/7</span>
+                        <span class="text-line-2">Always monitored</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-calendar-range-fill"></i></div>
-                <div class="pill-text"><strong>Flexible Plans</strong><small>Weekly to yearly</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-bug-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Pest Control</span>
+                        <span class="text-line-2">Regular treatment</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-fire"></i></div>
-                <div class="pill-text"><strong>Fire Safety</strong><small>Smoke alarm systems</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-calendar-range-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Flexible Plans</span>
+                        <span class="text-line-2">Weekly to yearly</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-fire"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Fire Safety</span>
+                        <span class="text-line-2">Smoke alarm systems</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
     </div>
 </section>
 

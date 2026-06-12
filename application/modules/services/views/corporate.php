@@ -1,40 +1,76 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
-    <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Corporate Shifting</span>
-        </nav>
-        <h1><span class="bc-title-white">Corporate</span> <span class="bc-title-orange">Shifting</span></h1>
-        <p class="bc-desc">We plan and execute corporate office moves with zero business interruption. Our specialized team handles IT infrastructure, modular furniture, and confidential records with precision and discretion.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-building-gear"></i></div>
-                <div class="pill-text"><strong>Zero Downtime</strong><small>Off-hour moves</small></div>
+<!-- Modern Breadcrumbs Hero Section -->
+<section class="service-breadcrumbs position-relative overflow-hidden py-4">
+    <div class="container position-relative z-2">
+        
+        <!-- Breadcrumb Pill Bar -->
+        <div class="bc-nav-wrapper mb-5">
+            <nav class="bc-nav-pill shadow-sm d-inline-flex align-items-center gap-2">
+                <a href="<?= site_url() ?>" class="bc-nav-item text-decoration-none">
+                    <i class="bi bi-house-door-fill"></i> Home
+                </a>
+                <span class="bc-nav-sep"><i class="bi bi-chevron-right"></i></span>
+                <span class="bc-nav-current">Corporate Shifting</span>
+            </nav>
+        </div>
+        
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 col-md-8 col-12">
+                <h1 class="bc-main-title fw-extrabold mb-3">Corporate Shifting</h1>
+                <p class="bc-desc mb-0">We plan and execute corporate office moves with zero business interruption. Our specialized team handles IT infrastructure, modular furniture, and confidential records with precision and discretion.</p>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-pc-display-horizontal"></i></div>
-                <div class="pill-text"><strong>IT Managed</strong><small>Server room experts</small></div>
+            <!-- Right side column kept empty to let the background image showcase the truck & workers -->
+            <div class="col-lg-5 col-md-4 d-none d-md-block"></div>
+        </div>
+
+        <!-- Horizontal Features Row -->
+        <div class="row bc-features-row mt-5 pt-3">
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-building-gear"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Zero Downtime</span>
+                        <span class="text-line-2">Off-hour moves</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-tags-fill"></i></div>
-                <div class="pill-text"><strong>Inventory Tag</strong><small>Item-wise tracking</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-pc-display-horizontal"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">IT Managed</span>
+                        <span class="text-line-2">Server room experts</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-shield-check"></i></div>
-                <div class="pill-text"><strong>Insurance</strong><small>Asset protection</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-tags-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Inventory Tag</span>
+                        <span class="text-line-2">Item-wise tracking</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Insurance</span>
+                        <span class="text-line-2">Asset protection</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
     </div>
 </section>
 

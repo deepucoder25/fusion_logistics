@@ -1,15 +1,3 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-
-$src_about = "C:\\Users\\Deepali Kumari\\.gemini\\antigravity-ide\\brain\\9d721dd2-2a86-426e-b1ca-7c1d92f1059e\\about_delivery_handshake_1781240416732.png";
-$dest_about = "assets/images/about/about-showcase.png";
-if (file_exists($src_about) && !file_exists($dest_about)) {
-    if (!is_dir('assets/images/about')) {
-        @mkdir('assets/images/about', 0777, true);
-    }
-    @copy($src_about, $dest_about);
-}
-?>
-
 <section class="about-section py-5 position-relative">
     <div class="about-decor decor-top-right d-none d-md-block"></div>
     <div class="about-decor decor-bottom-left d-none d-md-block"></div>

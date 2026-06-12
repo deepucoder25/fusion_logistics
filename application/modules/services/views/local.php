@@ -1,40 +1,76 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
-    <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Local Shifting</span>
-        </nav>
-        <h1><span class="bc-title-white">Local</span> <span class="bc-title-orange">Shifting</span></h1>
-        <p class="bc-desc">Moving within the city has never been easier. Our local shifting team is available 7 days a week for same-day moves, with full packing materials and experienced movers at your doorstep.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-lightning-charge-fill"></i></div>
-                <div class="pill-text"><strong>Same Day</strong><small>Quick local moves</small></div>
+<!-- Modern Breadcrumbs Hero Section -->
+<section class="service-breadcrumbs position-relative overflow-hidden py-4">
+    <div class="container position-relative z-2">
+        
+        <!-- Breadcrumb Pill Bar -->
+        <div class="bc-nav-wrapper mb-5">
+            <nav class="bc-nav-pill shadow-sm d-inline-flex align-items-center gap-2">
+                <a href="<?= site_url() ?>" class="bc-nav-item text-decoration-none">
+                    <i class="bi bi-house-door-fill"></i> Home
+                </a>
+                <span class="bc-nav-sep"><i class="bi bi-chevron-right"></i></span>
+                <span class="bc-nav-current">Local Shifting</span>
+            </nav>
+        </div>
+        
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 col-md-8 col-12">
+                <h1 class="bc-main-title fw-extrabold mb-3">Local Shifting</h1>
+                <p class="bc-desc mb-0">Moving within the city has never been easier. Our local shifting team is available 7 days a week for same-day moves, with full packing materials and experienced movers at your doorstep.</p>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-tag-fill"></i></div>
-                <div class="pill-text"><strong>Affordable</strong><small>Budget-friendly rates</small></div>
+            <!-- Right side column kept empty to let the background image showcase the truck & workers -->
+            <div class="col-lg-5 col-md-4 d-none d-md-block"></div>
+        </div>
+
+        <!-- Horizontal Features Row -->
+        <div class="row bc-features-row mt-5 pt-3">
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Same Day</span>
+                        <span class="text-line-2">Quick local moves</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-calendar-check-fill"></i></div>
-                <div class="pill-text"><strong>7 Days</strong><small>Available all week</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-tag-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Affordable</span>
+                        <span class="text-line-2">Budget-friendly rates</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-box-seam-fill"></i></div>
-                <div class="pill-text"><strong>Full Pack</strong><small>All materials included</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-calendar-check-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">7 Days</span>
+                        <span class="text-line-2">Available all week</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-box-seam-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Full Pack</span>
+                        <span class="text-line-2">All materials included</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
     </div>
 </section>
 

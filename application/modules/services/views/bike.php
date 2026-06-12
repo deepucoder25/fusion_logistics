@@ -1,40 +1,76 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
-    <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Bike Transportation</span>
-        </nav>
-        <h1><span class="bc-title-white">Bike</span> <span class="bc-title-orange">Transportation</span></h1>
-        <p class="bc-desc">Your prized bike deserves the safest journey. We transport all two-wheelers — scooters, motorcycles, and sports bikes — in padded cradles with complete insurance cover across India.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-shield-fill-check"></i></div>
-                <div class="pill-text"><strong>Padded Cradle</strong><small>Scratch-free transit</small></div>
+<!-- Modern Breadcrumbs Hero Section -->
+<section class="service-breadcrumbs position-relative overflow-hidden py-4">
+    <div class="container position-relative z-2">
+        
+        <!-- Breadcrumb Pill Bar -->
+        <div class="bc-nav-wrapper mb-5">
+            <nav class="bc-nav-pill shadow-sm d-inline-flex align-items-center gap-2">
+                <a href="<?= site_url() ?>" class="bc-nav-item text-decoration-none">
+                    <i class="bi bi-house-door-fill"></i> Home
+                </a>
+                <span class="bc-nav-sep"><i class="bi bi-chevron-right"></i></span>
+                <span class="bc-nav-current">Bike Transportation</span>
+            </nav>
+        </div>
+        
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 col-md-8 col-12">
+                <h1 class="bc-main-title fw-extrabold mb-3">Bike Transportation</h1>
+                <p class="bc-desc mb-0">Your prized bike deserves the safest journey. We transport all two-wheelers — scooters, motorcycles, and sports bikes — in padded cradles with complete insurance cover across India.</p>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-patch-check-fill"></i></div>
-                <div class="pill-text"><strong>Insured Transit</strong><small>Damage protection</small></div>
+            <!-- Right side column kept empty to let the background image showcase the truck & workers -->
+            <div class="col-lg-5 col-md-4 d-none d-md-block"></div>
+        </div>
+
+        <!-- Horizontal Features Row -->
+        <div class="row bc-features-row mt-5 pt-3">
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-shield-fill-check"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Padded Cradle</span>
+                        <span class="text-line-2">Scratch-free transit</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-globe-americas"></i></div>
-                <div class="pill-text"><strong>Pan-India</strong><small>All city coverage</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Insured Transit</span>
+                        <span class="text-line-2">Damage protection</span>
+                    </div>
+                </div>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-house-door-fill"></i></div>
-                <div class="pill-text"><strong>Door Pickup</strong><small>Home collection</small></div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-globe-americas"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Pan-India</span>
+                        <span class="text-line-2">All city coverage</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 feature-item-col">
+                <div class="bc-feature-item d-flex align-items-center">
+                    <div class="bc-feature-icon">
+                        <i class="bi bi-house-door-fill"></i>
+                    </div>
+                    <div class="bc-feature-text">
+                        <span class="text-line-1">Door Pickup</span>
+                        <span class="text-line-2">Home collection</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
     </div>
 </section>
 
