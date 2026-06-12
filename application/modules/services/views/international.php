@@ -103,7 +103,7 @@
                     <div class="row align-items-center my-5 service-feature-block">
                         <div class="col-md-6 mb-4 mb-md-0">
                             <div class="service-main-image-wrap m-0">
-                                <img loading="lazy" src="<?= base_url('assets/images/services_modules/service_international_shifting.jpg') ?>" alt="International Shifting Service" class="img-fluid">
+                                <img loading="lazy" src="<?= base_url('assets/images/gallery/img4.jpg') ?>" alt="International Shifting Service" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-md-6">
