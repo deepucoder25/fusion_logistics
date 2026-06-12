@@ -21,7 +21,6 @@
                 ['slug' => 'testimonials',      'name' => 'Testimonial',       'icon' => 'bi-chat-quote-fill'],
                 ['slug' => 'reviews',           'name' => 'Reviews',           'icon' => 'bi-star-fill'],
                 ['slug' => 'blog',              'name' => 'Blog',              'icon' => 'bi-journal-text'],
-                ['slug' => 'photo-gallery',     'name' => 'Photo Gallery',     'icon' => 'bi-images'],
             ];
 
             foreach ($sidebar_links as $link):

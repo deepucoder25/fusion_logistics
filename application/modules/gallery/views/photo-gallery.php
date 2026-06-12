@@ -75,99 +75,134 @@
 </section>
 
 <!-- Main Page Content Section -->
+<?php
+$galleryItems = [
+    [
+        'fallback_img' => 'assets/images/gallery/img1.jpg',
+        'alt' => 'Professional packing of household furniture with bubble wrap'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img2.jpg',
+        'alt' => 'Logistics workers loading packed boxes into a relocation truck'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img3.jpg',
+        'alt' => 'Logistics container truck carrying goods safely on the highway'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img4.jpg',
+        'alt' => 'Secure warehouse storage facility with stacked wooden crates'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img5.jpg',
+        'alt' => 'Professional corporate office relocation and desk setup setup in progress'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img6.jpg',
+        'alt' => 'Close up of worker wrapping household furniture with stretch wrap'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img7.jpg',
+        'alt' => 'Safe delivery person delivering packed cargo boxes at customer doorstep'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img8.jpg',
+        'alt' => 'Workers carefully packing fragile television screen with protective foam sheets'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img9.jpg',
+        'alt' => 'Packing household products into heavy-duty corrugated cartons for safe shifting'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img10.jpg',
+        'alt' => 'Packed goods wrapped with bubble sheets and strapping tape ready for transport loading'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img11.jpg',
+        'alt' => 'Happy family moving and shifting to new home smiling with packers movers'
+    ],
+    [
+        'fallback_img' => 'assets/images/gallery/img12.jpg',
+        'alt' => 'Happy family moving and shifting to new home smiling with packers movers'
+    ],
+];
+?>
+
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
-        <div class="row">
-            <!-- Left Side Content -->
-            <div class="col-lg-8">
-                <div class="service-main-content">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-12">
+                <div class="gallery-container px-2">
                     
-                    <h2 class="service-section-title">Our Relocation Operations in Action</h2>
-                    <div class="about-service-text mb-4">
-                        <p>
-                            Take a look at our on-field photos demonstrating our dedication to safety, careful packaging, and organized logistics. Our photo gallery highlights our packing standards, secure warehouse storage, and specialized fleets.
-                        </p>
+                    <!-- Title & Subtitle -->
+                    <h2 class="gallery-main-title mb-2">Photo Gallery</h2>
+                    <p class="gallery-subtitle mb-4">Explore our relocation operations in action. From careful packing to safe delivery, we ensure a smooth and hassle-free moving experience.</p>
+                    
+                    <!-- Photo Grid (3 columns in 1 row) -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="galleryGrid">
+                        <?php foreach ($galleryItems as $item): ?>
+                            <?php
+                            $imgSrc = base_url($item['fallback_img']);
+                            ?>
+                            <div class="col gallery-item-col">
+                                <div class="gallery-card-modern">
+                                    <div class="gallery-card-img-wrap">
+                                        <img loading="lazy" src="<?= $imgSrc ?>" class="gallery-card-img" alt="<?= $item['alt'] ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
-
-                    <!-- Photo Gallery Grid -->
-                    <div class="row">
-                        <!-- Photo 1 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/home-shifting-services.webp') ?>" class="w-100 img-fluid gallery-img" alt="Household Packing and Shifting Services">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Household Packing</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Multi-Layer Furniture Protection</h5>
-                                    <p class="small text-muted mb-0">Careful packing of household furniture using bubble wrap and edge guards to prevent transit scratches.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Photo 2 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/car-transportation-services.webp') ?>" class="w-100 img-fluid gallery-img" alt="Car Transportation Carriers">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Car Carrier</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Enclosed Double-Deck Car Transport</h5>
-                                    <p class="small text-muted mb-0">Loading passenger cars inside fully enclosed containers to protect them from weather and road debris.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Photo 3 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/bike-transportation-services.webp') ?>" class="w-100 img-fluid gallery-img" alt="Two-Wheeler Bike Shifting">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Bike Shifting</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Scratch-Free Two-Wheeler Packing</h5>
-                                    <p class="small text-muted mb-0">Secure wheel lock straps and heavy foam sheeting applied to bikes before long-distance transport.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Photo 4 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/loading.webp') ?>" class="w-100 img-fluid gallery-img" alt="Cargo Loading Operations">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Cargo Loading</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Organized Goods Stacking &amp; Loading</h5>
-                                    <p class="small text-muted mb-0">Professional loaders stacking boxes systematically inside our trucks to ensure stability during transit.</p>
-                                </div>
-                            </div>
-                        </div>
+                    
+                    <!-- Load More Button -->
+                    <div class="text-center mt-5">
+                        <button class="btn btn-load-more" id="loadMoreBtn">
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                            <span>Load More Photos</span>
+                        </button>
                     </div>
-
+                    
                 </div>
-            </div>
-
-            <!-- Right Side Sticky Sidebar -->
-            <div class="col-lg-4">
-                <?php $this->load->view('about/company_sidebar', ['active_link' => 'photo-gallery']); ?>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Client side pagination logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryItems = document.querySelectorAll('.gallery-item-col');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    
+    let visibleLimit = 6; // Show 6 photos initially
+    
+    function updateGallery() {
+        let count = 0;
+        galleryItems.forEach(item => {
+            count++;
+            if (count <= visibleLimit) {
+                item.classList.remove('hidden-by-limit');
+            } else {
+                item.classList.add('hidden-by-limit');
+            }
+        });
+        
+        // Show or hide the Load More button
+        if (galleryItems.length > visibleLimit) {
+            loadMoreBtn.style.display = 'inline-flex';
+        } else {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+    
+    // Load More button click handler
+    loadMoreBtn.addEventListener('click', function() {
+        visibleLimit += 6; // Reveal next 6 items
+        updateGallery();
+    });
+    
+    // Initialize gallery layout
+    updateGallery();
+});
+</script>
 

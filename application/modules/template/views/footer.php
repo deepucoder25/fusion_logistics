@@ -105,6 +105,7 @@
       <div class="col-lg-2 col-md-6 col-6">
         <h4 class="footer-col-title">Quick Links</h4>
         <ul class="footer-links-menu">
+          <li><a href="<?= site_url('photo-gallery') ?>"><i class="bi bi-chevron-right link-arrow"></i>Photo Gallery</a></li>
           <li><a href="#" data-bs-toggle="modal" data-bs-target="#qteModal"><i class="bi bi-chevron-right link-arrow"></i>Quote Request</a></li>
           <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right link-arrow"></i>Terms &amp; Conditions</a></li>
           <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right link-arrow"></i>Privacy Policy</a></li>

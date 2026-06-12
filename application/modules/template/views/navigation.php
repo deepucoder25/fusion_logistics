@@ -126,7 +126,10 @@
 
         <!-- Branches -->
         <a href="<?= site_url('our-branches') ?>" class="nav-link<?= $active_tab === 'locations' ? ' active' : '' ?>">Branches</a>
-
+        
+        <!-- Gallery -->
+        <a href="<?= site_url('photo-gallery') ?>" class="nav-link<?= $active_tab === 'gallery' ? ' active' : '' ?>">Gallery</a>
+        
         <!-- Contact Us -->
         <a href="<?= site_url('contact-us') ?>" class="nav-link<?= $active_tab === 'contact' ? ' active' : '' ?>">Contact Us</a>
       </nav>
