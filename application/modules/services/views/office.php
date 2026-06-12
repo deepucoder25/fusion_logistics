@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Office Relocation</h1>
                 <p class="bc-desc mb-0">Minimize business disruption with our highly organized corporate office shifting services. We handle IT equipment, files, and modular furniture with utmost security.</p>

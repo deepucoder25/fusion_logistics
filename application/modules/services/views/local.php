@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Local Shifting</h1>
                 <p class="bc-desc mb-0">Moving within the city has never been easier. Our local shifting team is available 7 days a week for same-day moves, with full packing materials and experienced movers at your doorstep.</p>

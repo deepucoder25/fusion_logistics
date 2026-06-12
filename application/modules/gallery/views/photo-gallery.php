@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Photo Gallery</h1>
                 <p class="bc-desc mb-0">Explore visual highlights of our packaging quality, warehouse storage, specialized container carriers, and relocation operations.</p>

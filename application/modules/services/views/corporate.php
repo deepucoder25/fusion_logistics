@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Corporate Shifting</h1>
                 <p class="bc-desc mb-0">We plan and execute corporate office moves with zero business interruption. Our specialized team handles IT infrastructure, modular furniture, and confidential records with precision and discretion.</p>

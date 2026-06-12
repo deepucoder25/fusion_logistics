@@ -16,7 +16,7 @@ $rev = $reviews->result();
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3"><?= mb_strimwidth(@$rev[0]->r_title, 0, 40, "..."); ?></h1>
                 <p class="bc-desc mb-0">Feedback on our packing, moving, and transport services.</p>

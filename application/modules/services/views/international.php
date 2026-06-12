@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">International Shifting</h1>
                 <p class="bc-desc mb-0">Move across borders with confidence. We manage sea freight, air cargo, customs documentation, and door-to-door delivery through our global partner network in 50+ countries.</p>

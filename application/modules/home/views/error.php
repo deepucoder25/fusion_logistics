@@ -14,7 +14,7 @@
               </nav>
           </div>
           
-          <div class="row align-items-center g-4">
+          <div class="row align-items-center">
               <div class="col-lg-7 col-md-8 col-12">
                   <h1 class="bc-main-title fw-extrabold mb-3">404 Error</h1>
                   <p class="bc-desc mb-0">The page you are looking for does not exist on this server.</p>

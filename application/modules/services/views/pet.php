@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Pet Relocation</h1>
                 <p class="bc-desc mb-0">Your beloved pets deserve a safe, caring, and stress-free journey. We handle all documentation, IATA-approved crates, and airline or road logistics so your pets travel comfortably.</p>

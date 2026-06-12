@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Warehouse &amp; Storage</h1>
                 <p class="bc-desc mb-0">Store your household or commercial goods in our CCTV-monitored, pest-controlled, fire-safe warehouse facilities. Flexible weekly, monthly, and long-term rental plans available.</p>

@@ -17,6 +17,10 @@
     .pm-city-details-section {
         padding-top: 40px;
     }
+    .service-details-section .row,
+    .pm-city-details-section .row {
+        --bs-gutter-x: 1.5rem; /* Standard gutter width on smaller screens to prevent overflow */
+    }
 }
 
 .service-sidebar,

@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Video Gallery</h1>
                 <p class="bc-desc mb-0">Watch our step-by-step packing processes, transport safety standards, and commercial relocations in action.</p>

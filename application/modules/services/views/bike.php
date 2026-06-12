@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Bike Transportation</h1>
                 <p class="bc-desc mb-0">Your prized bike deserves the safest journey. We transport all two-wheelers — scooters, motorcycles, and sports bikes — in padded cradles with complete insurance cover across India.</p>

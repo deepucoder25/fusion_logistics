@@ -17,7 +17,7 @@
                 </nav>
             </div>
             
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center">
                 <div class="col-lg-7 col-md-8 col-12">
                     <h1 class="bc-main-title fw-extrabold mb-3">Our Blog</h1>
                     <p class="bc-desc mb-0">Stay updated with the latest news, tips, and insights on packing and moving.</p>

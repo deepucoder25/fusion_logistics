@@ -21,7 +21,7 @@
                 </nav>
             </div>
             
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center">
                 <div class="col-lg-7 col-md-8 col-12">
                     <h1 class="bc-main-title fw-extrabold mb-3">Blog Details</h1>
                     <p class="bc-desc mb-0"><?= htmlspecialchars(@$query[0]->title) ?></p>

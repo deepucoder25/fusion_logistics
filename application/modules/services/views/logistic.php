@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Logistic Services</h1>
                 <p class="bc-desc mb-0">End-to-end commercial logistics for businesses of all sizes — from last-mile delivery and FTL freight to supply chain management. GST-ready documentation and pan-India coverage.</p>

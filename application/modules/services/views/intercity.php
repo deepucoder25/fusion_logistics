@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Intercity Shifting</h1>
                 <p class="bc-desc mb-0">Move your household goods between cities with GPS-tracked vehicles, transparent fixed pricing, and a reliable fleet. Connecting Siliguri with Kolkata, Guwahati, Delhi, and all major cities.</p>

@@ -15,7 +15,7 @@
             </nav>
         </div>
         
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
                 <h1 class="bc-main-title fw-extrabold mb-3">Contact Us</h1>
                 <p class="bc-desc mb-0">Get in touch with <?= $company3 ?> Packers and Movers. We are here to help you 24/7 with your relocation needs.</p>
