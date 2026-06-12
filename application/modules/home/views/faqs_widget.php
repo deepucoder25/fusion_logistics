@@ -95,7 +95,7 @@ $faqs = [
                     <div class="faq-help-content position-relative z-3">
                         <h3 class="faq-help-title mb-2">Still Have Questions?<br><span class="text-accent">We're Here to Help!</span></h3>
                         <p class="faq-help-desc mb-4">Our team is ready to assist you with any queries you may have.</p>
-                        <a href="<?= base_url('contact') ?>" class="faq-help-btn btn">
+                        <a href="<?= site_url('contact-us') ?>" class="faq-help-btn btn">
                             <span>Contact Us</span>
                             <span class="btn-arrow-circle"><i class="bi bi-arrow-right-short"></i></span>
                         </a>
