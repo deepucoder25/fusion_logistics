@@ -929,3 +929,29 @@
     border-radius: 3px;
 }
 
+/* Mobile Responsive Overrides for City Details Page */
+@media (max-width: 767.98px) {
+    .pm-city-details-section {
+        padding: 24px 0 !important;
+    }
+    .pm-city-content-card {
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .pm-city-section-title {
+        font-size: 1.75rem !important;
+        margin-bottom: 16px !important;
+    }
+    .pm-city-featured-image-box, 
+    .pm-city-image-slider-wrapper {
+        margin-bottom: 20px !important;
+        border-radius: 12px !important;
+    }
+    .image-slider-slide img.slider-image {
+        height: 240px !important;
+    }
+}
+
+

@@ -1,3 +1,8 @@
+
+<?php if (!defined('BASEPATH'))
+  exit('No direct script access allowed');
+include 'city_content.php';
+?>
 <section class="pm-city-details-section">
   <div class="container">
     <div class="row g-4">
@@ -26,15 +31,15 @@
                 <div class="image-slider-track">
                    <!-- Slide 1 -->
                    <div class="image-slider-slide">
-                      <img src="<?= base_url('assets/images/img1.png') ?>" alt="Packers and Movers Shifting in <?= $city ?>" class="img-fluid slider-image" loading="lazy">
+                      <img src="<?= base_url('assets/images/gallery/img1.jpg') ?>" alt="Packers and Movers Shifting in <?= $city ?>" class="img-fluid slider-image" loading="lazy">
                    </div>
                    <!-- Slide 2 -->
                    <div class="image-slider-slide">
-                      <img src="<?= base_url('assets/images/img2.png') ?>" alt="Safe packing services in <?= $city ?>" class="img-fluid slider-image" loading="lazy">
+                      <img src="<?= base_url('assets/images/gallery/img2.jpg') ?>" alt="Safe packing services in <?= $city ?>" class="img-fluid slider-image" loading="lazy">
                    </div>
                    <!-- Slide 3 -->
                    <div class="image-slider-slide">
-                      <img src="<?= base_url('assets/images/img3.png') ?>" alt="Loading transport vehicle in <?= $city ?>" class="img-fluid slider-image" loading="lazy">
+                      <img src="<?= base_url('assets/images/gallery/img3.jpg') ?>" alt="Loading transport vehicle in <?= $city ?>" class="img-fluid slider-image" loading="lazy">
                    </div>
                 </div>
              </div>
@@ -88,6 +93,7 @@
           <!-- FAQs Accordion -->
           <?php include 'city_faq.php'?>
 
+          </div>
         </div>
       </div><!-- /col-lg-8 -->
 

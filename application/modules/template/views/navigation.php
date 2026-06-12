@@ -23,68 +23,6 @@
   }
   ?>
 
-  <!-- Slim Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <!-- Desktop Top Bar -->
-      <div class="top-bar-desktop d-none d-lg-flex justify-content-between align-items-center">
-        <!-- Left Side: Email & Phone -->
-        <div class="top-bar-left d-flex align-items-center gap-3">
-          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-2">
-            <i class="bi bi-envelope"></i> <span><?= $mail ?></span>
-          </a>
-          <span class="divider-line">|</span>
-          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-2">
-            <i class="bi bi-telephone"></i> <span><?= $phone ?></span>
-          </a>
-        </div>
-        
-        <!-- Middle-Left: Trust Badge & Happy Customers -->
-        <div class="top-bar-middle d-flex align-items-center gap-3">
-          <span class="top-badge-text d-flex align-items-center gap-2">
-            <i class="bi bi-shield-check text-primary-light"></i> <span>Verified & Trusted</span>
-          </span>
-          <span class="divider-line">|</span>
-          <span class="top-badge-text d-flex align-items-center gap-2">
-            <i class="bi bi-people"></i> <span><?= $happyClients ?> Happy Customers</span>
-          </span>
-        </div>
-        
-        <!-- Right Side: Offer & Reviews Badges -->
-        <div class="top-bar-right d-flex align-items-center gap-2">
-          <span class="top-badge-pill highlight-offer">
-            <i class="bi bi-lightning-fill text-warning"></i> 10% OFF ON YOUR FIRST MOVE
-          </span>
-          <span class="top-badge-pill highlight-rating">
-            <i class="bi bi-star-fill text-warning"></i> <?= $ratingValue ?> Google Reviews
-          </span>
-        </div>
-      </div>
-
-      <!-- Mobile Top Bar -->
-      <div class="top-bar-mobile d-flex d-lg-none flex-column gap-2 py-1">
-        <!-- Row 1: Contact Info -->
-        <div class="d-flex justify-content-center align-items-center gap-3">
-          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-1">
-            <i class="bi bi-envelope"></i> <span><?= $mail ?></span>
-          </a>
-          <span class="divider-line">|</span>
-          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-1">
-            <i class="bi bi-telephone"></i> <span><?= $phone ?></span>
-          </a>
-        </div>
-        <!-- Row 2: Offer & Google Reviews -->
-        <div class="d-flex justify-content-center align-items-center gap-2">
-          <span class="top-badge-pill highlight-offer">
-            <i class="bi bi-lightning-fill text-warning"></i> 10% OFF ON YOUR FIRST MOVE
-          </span>
-          <span class="top-badge-pill highlight-rating">
-            <i class="bi bi-star-fill text-warning"></i> <?= $ratingValue ?> Google Reviews
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Main Sticky Header -->
   <header class="main-header" id="mainHeader">

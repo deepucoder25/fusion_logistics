@@ -11,7 +11,6 @@ if (!empty($city)) {
         <p>
             At <strong>" . $company3 . "</strong>, we deliver secure, reliable, and professionally managed packers and movers services in <strong>" . $city . "</strong>. Our highly trained loading staff, premium packaging materials, and well-maintained fleet guarantee that your assets are relocated with extreme care and zero hassle.
         </p>
-    </div> <!-- Closes .city-prose -->
 
     <!-- Feature Pills Grid -->
     <div class='city-feature-pills'>

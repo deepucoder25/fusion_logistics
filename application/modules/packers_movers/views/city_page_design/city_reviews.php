@@ -31,7 +31,7 @@
               </div>
             </div>
             
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 d-none d-md-block">
               <div class="city-review-card h-100">
                 <div class="review-stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -68,7 +68,7 @@
               </div>
             </div>
             
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 d-none d-md-block">
               <div class="city-review-card h-100">
                 <div class="review-stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
