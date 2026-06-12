@@ -31,7 +31,6 @@ $route["bike-transport-in-(:any)"] = "city_services/bike_transport/$1";
 $route["our-services"] = "services/index";
 $route["bike-transportation"] = "services/bike";
 $route["car-transportation"] = "services/car";
-$route["corporate-shifting"] = "services/corporate";
 $route["domestic-relocation"] = "services/domestic";
 $route["home-shifting"] = "services/homeShifting";
 $route["intercity-shifting"] = "services/intercity";

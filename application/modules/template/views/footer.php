@@ -97,7 +97,7 @@
           <li><a href="<?= site_url('warehouse-and-storage') ?>"><i class="bi bi-chevron-right link-arrow"></i>Warehouse &amp; Storage</a></li>
           <li><a href="<?= site_url('domestic-relocation') ?>"><i class="bi bi-chevron-right link-arrow"></i>Domestic Relocation</a></li>
           <li><a href="<?= site_url('international-shifting') ?>"><i class="bi bi-chevron-right link-arrow"></i>International Shifting</a></li>
-          <li><a href="<?= site_url('corporate-shifting') ?>"><i class="bi bi-chevron-right link-arrow"></i>Corporate Shifting</a></li>
+
         </ul>
       </div>
 

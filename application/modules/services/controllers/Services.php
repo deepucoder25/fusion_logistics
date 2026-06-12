@@ -61,14 +61,6 @@ class Services extends MX_Controller
         echo Modules::run('template/layout2', $data);
     }
 
-    function corporate()
-    {
-        $data['title'] = "Corporate Shifting & Employee Relocation | " . $this->comp['company3'];
-        $data['description'] = "Premium corporate relocation services by " . $this->comp['company3'] . ". Safe packing and movement of office inventory, computers, and furniture.";
-        $data['module'] = "services";
-        $data['view_file'] = "corporate";
-        echo Modules::run('template/layout2', $data);
-    }
 
     function domestic()
     {
