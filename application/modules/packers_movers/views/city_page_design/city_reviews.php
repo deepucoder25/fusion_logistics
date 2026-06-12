@@ -1,9 +1,22 @@
- <!-- Testimonials -->
-        <div class="city-content-card mt-4">
-          <h3 class="city-section-title-sm"><i class="bi bi-chat-left-quote me-2"></i>Customer Experiences</h3>
-          <div class="row g-3 mt-1">
-            <div class="col-md-6">
-              <div class="city-review-card">
+<!-- Testimonials CSS Carousel (No JS required) -->
+<div class="city-content-card mt-4">
+  <h3 class="city-section-title-sm"><i class="bi bi-chat-left-quote me-2 text-primary"></i>Customer Experiences</h3>
+  <p class="city-review-subtitle text-muted mb-4">Read real feedback from our clients relocated in <?= $city ?>.</p>
+  
+  <div class="css-carousel-wrapper">
+    <!-- Radio Controls -->
+    <input type="radio" name="testimonial-carousel" id="review-1" checked class="carousel-radio">
+    <input type="radio" name="testimonial-carousel" id="review-2" class="carousel-radio">
+    
+    <!-- Slides Container -->
+    <div class="carousel-track-container">
+      <div class="carousel-track">
+        
+        <!-- Slide 1 (Rohit & Ananya) -->
+        <div class="carousel-slide">
+          <div class="row g-3">
+            <div class="col-md-6 col-12">
+              <div class="city-review-card h-100">
                 <div class="review-stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -17,8 +30,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="city-review-card">
+            
+            <div class="col-md-6 col-12">
+              <div class="city-review-card h-100">
                 <div class="review-stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -32,8 +46,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="city-review-card">
+          </div>
+        </div>
+        
+        <!-- Slide 2 (Sandeep & Priya) -->
+        <div class="carousel-slide">
+          <div class="row g-3">
+            <div class="col-md-6 col-12">
+              <div class="city-review-card h-100">
                 <div class="review-stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
                 </div>
@@ -47,8 +67,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="city-review-card">
+            
+            <div class="col-md-6 col-12">
+              <div class="city-review-card h-100">
                 <div class="review-stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -64,3 +85,30 @@
             </div>
           </div>
         </div>
+        
+      </div>
+    </div>
+    
+    <!-- Bottom Controls Container -->
+    <div class="carousel-bottom-controls">
+      <!-- Left Arrows (Prev) -->
+      <div class="carousel-arrows left-arrows">
+        <label for="review-2" class="arrow-btn arr-to-2"><i class="bi bi-chevron-left"></i> Prev</label>
+        <label for="review-1" class="arrow-btn arr-to-1"><i class="bi bi-chevron-left"></i> Prev</label>
+      </div>
+
+      <!-- Navigation Indicators (Dots) -->
+      <div class="pm-carousel-indicators">
+        <label for="review-1" class="pm-indicator-dot dot-1"></label>
+        <label for="review-2" class="pm-indicator-dot dot-2"></label>
+      </div>
+
+      <!-- Right Arrows (Next) -->
+      <div class="carousel-arrows right-arrows">
+        <label for="review-2" class="arrow-btn arr-to-2">Next <i class="bi bi-chevron-right"></i></label>
+        <label for="review-1" class="arrow-btn arr-to-1">Next <i class="bi bi-chevron-right"></i></label>
+      </div>
+    </div>
+    
+  </div>
+</div>

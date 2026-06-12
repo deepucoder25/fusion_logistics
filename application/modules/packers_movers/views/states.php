@@ -78,23 +78,7 @@ $state = [
         "image" => "maharashtra.jpg",
         "category" => "Maharashtra",
         "link" => "maharashtra"
-    ],
-    [
-        "image" => "bangalore.jpg",
-        "category" => "Bangalore",
-        "link" => "bangalore"
-    ],
-
-    [
-        "image" => "west-bengal.jpg",
-        "category" => "West Bengal",
-        "link" => "west-bengal"
-    ],
-    [
-        "image" => "uttar-pradesh.jpg",
-        "category" => "Uttar Pradesh",
-        "link" => "uttar-pradesh"
-    ],
+    ]
 ];
 ?>
 
@@ -104,7 +88,7 @@ $state = [
 
         <!-- Section Heading -->
         <div class="text-center mb-5">
-            <h2 class="fw-bold">
+            <h2 class="fw-bold text-dark">
                 Our Presence Across <span class="pm-states-title-span">India</span>
             </h2>
             <p class="text-muted">
@@ -112,37 +96,67 @@ $state = [
             </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
 
-            <?php foreach ($state as $item): ?>
+            <?php foreach ($state as $item): 
+                $info_text = '';
+                $badge_text = 'Active Hub';
+                if (strtolower($item['category']) === 'delhi') {
+                    $info_text = 'National Capital Region, Noida, Gurgaon & hubs';
+                    $badge_text = '20+ Branches';
+                } elseif (strtolower($item['category']) === 'maharashtra') {
+                    $info_text = 'Mumbai, Pune, Nagpur & major commercial hubs';
+                    $badge_text = '15+ Branches';
+                } elseif (strtolower($item['category']) === 'bangalore') {
+                    $info_text = 'Silicon Valley, Electronic City & tech suburbs';
+                    $badge_text = '12+ Branches';
+                } elseif (strtolower($item['category']) === 'west bengal') {
+                    $info_text = 'Kolkata, Siliguri, Howrah & metro zones';
+                    $badge_text = '10+ Branches';
+                } elseif (strtolower($item['category']) === 'uttar pradesh') {
+                    $info_text = 'Noida, Lucknow, Kanpur & major cities';
+                    $badge_text = '8+ Branches';
+                }
+            ?>
                 
-                <!-- 4 Columns in One Row on Desktop -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- Individual Column for 5-Cols System -->
+                <div class="col">
 
-                    <div class="pm-states-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                    <div class="pm-state-card-premium">
 
-                        <!-- Image -->
-                        <div class="pm-states-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100"
+                        <!-- Image Wrap -->
+                        <div class="pm-state-image-wrap">
+                            <span class="pm-state-badge"><?= $badge_text ?></span>
+                            
+                            <img class="img-fluid"
                                 src="<?= base_url() ?>/assets/images/state/<?= $item['image'] ?>"
-                                alt="<?= $item['category'] ?>">
+                                alt="<?= $item['category'] ?>"
+                                loading="lazy">
 
-                            <div class="pm-states-overlay">
-                                <a href="<?= site_url($item['link']) ?>" class="btn btn-warning btn-sm rounded-pill px-3">
-                                    View
+                            <!-- Hover Overlay -->
+                            <div class="pm-state-hover-overlay">
+                                <a href="<?= site_url($item['link']) ?>" class="explore-icon" aria-label="Explore <?= $item['category'] ?> Branches">
+                                    <i class="bi bi-arrow-right-short"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Content -->
-                        <div class="p-3 text-start d-flex align-items-center gap-2">
-                            <span class="pm-states-yellow-dash"></span>
-                            <h6 class="fw-semibold mb-0">
-                                <a href="<?= site_url($item['link']) ?>"
-                                    class="text-dark text-decoration-none">
+                        <!-- Card Body -->
+                        <div class="pm-state-card-body">
+                            <h3 class="pm-state-title">
+                                <a href="<?= site_url($item['link']) ?>" class="text-decoration-none color-inherit">
                                     <?= htmlspecialchars($item['category']) ?>
                                 </a>
-                            </h6>
+                            </h3>
+                            <p class="pm-state-desc">
+                                <?= $info_text ?>
+                            </p>
+                            
+                            <!-- Explore Button -->
+                            <a href="<?= site_url($item['link']) ?>" class="pm-state-cta-btn">
+                                <span>Explore Branches</span>
+                                <i class="bi bi-arrow-right-short"></i>
+                            </a>
                         </div>
 
                     </div>

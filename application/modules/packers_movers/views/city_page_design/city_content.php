@@ -2,69 +2,53 @@
 $htmlcontent = '';
 $htmlcontent1 = '';
 $htmlcontent2 = '';
-// bihar 
-if (strtolower($city) == "") {
+
+if (!empty($city)) {
    $htmlcontent = "
-        
+        <p class='lead-text'>
+            Planning a move in <strong>" . $city . "</strong>? Relocating your entire home, office, or transporting vehicles doesn't have to be a stressful task. Local traffic delays, narrow apartment society lanes, building restrictions, and unexpected weather changes can often complicate shifting.
+        </p>
+        <p>
+            At <strong>" . $company3 . "</strong>, we deliver secure, reliable, and professionally managed packers and movers services in <strong>" . $city . "</strong>. Our highly trained loading staff, premium packaging materials, and well-maintained fleet guarantee that your assets are relocated with extreme care and zero hassle.
+        </p>
+    </div> <!-- Closes .city-prose -->
+
+    <!-- Feature Pills Grid -->
+    <div class='city-feature-pills'>
+        <div class='city-pill'><i class='bi bi-shield-fill-check'></i> 100% Insured Shifting</div>
+        <div class='city-pill'><i class='bi bi-truck'></i> GPS-Tracked Vehicles</div>
+        <div class='city-pill'><i class='bi bi-box-seam-fill'></i> 5-Layer Padded Wrapping</div>
+        <div class='city-pill'><i class='bi bi-clock-fill'></i> On-Time Shifting Promise</div>
+    </div>
    ";
+
    $htmlcontent1 = "
-   
+    <!-- Shifting Dynamics Block -->
+    <div class='city-content-card mt-4'>
+        <h3 class='city-section-title-sm'><i class='bi bi-info-circle-fill text-primary me-2'></i>Shifting Dynamics in " . $city . "</h3>
+        <p>Every city presents unique logistical challenges. In <strong>" . $city . "</strong>, residential societies often restrict commercial vehicles during specific hours, and high-rise apartments require experienced rope-handling for heavy items.</p>
+        <p>Our crews are fully familiar with local society rules, permit systems, and street routes across <strong>" . $city . "</strong>. We manage all visual loading checklists, labeling sequences, and safety protocols to ensure a seamless relocation process.</p>
+
+        <!-- Services Checklist -->
+        <h3 class='city-section-title-sm mt-4'><i class='bi bi-gear-fill text-primary me-2'></i>Relocation Services Offered in " . $city . "</h3>
+        <p>We provide complete packing and shifting solutions under one roof:</p>
+        <ul class='city-checklist'>
+            <li><i class='bi bi-check2-circle'></i> Complete Household Shifting</li>
+            <li><i class='bi bi-check2-circle'></i> Safe Office Relocations</li>
+            <li><i class='bi bi-check2-circle'></i> Bike &amp; Car Carrier Transport</li>
+            <li><i class='bi bi-check2-circle'></i> Local and Outstation Moving</li>
+            <li><i class='bi bi-check2-circle'></i> Secure Storage &amp; Warehousing</li>
+            <li><i class='bi bi-check2-circle'></i> Part-load Transport Solutions</li>
+        </ul>
+    </div>
    ";
+
    $htmlcontent2 = "
-   
+    <!-- Professional Moving Care -->
+    <div class='city-content-card mt-4 mb-4'>
+        <h3 class='city-section-title-sm'><i class='bi bi-patch-check-fill text-primary me-2'></i>The Professional Shifting Advantage</h3>
+        <p>Opting for professional movers ensures that your delicate glassware, electronic items, and large furniture receive appropriate care. We pack fragile kitchenware in customized cardboard cartons, protect table edges with thick foam sheets, and secure white goods using high-strength wrapping films.</p>
+        <p>Our pricing model remains fully transparent. We provide structured quotations before booking, with no hidden loading charges or last-minute fee revisions. Experience a secure, stress-free shifting process in <strong>" . $city . "</strong> with our dedicated packers and movers crew.</p>
+    </div>
    ";
-} else {
-   $htmlcontent = "
-            <p>
-              Planning a move in <strong> $city </strong>? Here's what you need to know. Traffic delays, apartment timing rules, narrow society lanes, and sudden weather changes can turn a simple shifting job into a long day. That's exactly where <strong> $company3 </strong> helps. We've been handling household relocation, office shifting, bike transport, and local moving in  $city  with trained staff, proper packing methods, and practical planning that actually works on ground level.
-            </p>
-            <p>
-              People searching for <strong>Top Packers and Movers in  $city </strong> usually want one thing — safe shifting without confusion. Nobody wants broken furniture or late delivery calls after packing their whole house.
-            </p>
-          </div>
-
-          <!-- Feature Pills -->
-          <div class='city-feature-pills'>
-            <div class='city-pill'><i class='bi bi-shield-check'></i> 100% Insured Shifting</div>
-            <div class='city-pill'><i class='bi bi-truck'></i> Real-time GPS Tracking</div>
-            <div class='city-pill'><i class='bi bi-box-seam'></i> Premium Multi-layer Packing</div>
-            <div class='city-pill'><i class='bi bi-clock-history'></i> On-Time Delivery Guaranteed</div>
-          </div>
-       
-   ";
-   $htmlcontent1 = "
-    <!-- What Makes Relocation Different -->
-        <div class='city-content-card mt-4'>
-          <h3 class='city-section-title-sm'>What Makes Local Relocation in  $city Different?</h3>
-          <p>Every city has its own moving challenges. In <strong> $city</strong>, monsoon season means extra waterproof wrapping is necessary for wooden furniture and electronics. Some residential areas also have limited parking access for larger trucks, so arranging a local tempo becomes important.</p>
-          <p>That's why families looking for <strong>Best Packers and Movers in  $city</strong> prefer experienced movers instead of random transport vendors. Timing coordination, building permissions, unloading sequence, and proper carton labeling save a lot of confusion later.</p>
-
-          <!-- Services List -->
-          <h3 class='city-section-title-sm mt-4'>Services Available for Household, Office & Vehicles in  $city</h3>
-          <p> $company3  handles a wide range of relocation needs:</p>
-          <ul class='city-checklist'>
-            <li><i class='bi bi-check2-circle'></i> Household relocation in  $city</li>
-            <li><i class='bi bi-check2-circle'></i> Office and commercial shifting</li>
-            <li><i class='bi bi-check2-circle'></i> Bike and car transportation</li>
-            <li><i class='bi bi-check2-circle'></i> Local moving within  $city</li>
-            <li><i class='bi bi-check2-circle'></i> Storage and warehouse support</li>
-            <li><i class='bi bi-check2-circle'></i> Loading and unloading assistance</li>
-          </ul>
-          <p>Many customers searching for <strong>Relocating Services Near Me in  $city</strong> also ask about part-load shifting. We handle that too — especially for students and small families. Temporary storage is also available for customers waiting for possession dates.</p>
-        </div>
-
-       
-
-   ";
-   $htmlcontent2 = "
-    <!-- Why Choose Professional Movers -->
-        <div class='city-content-card mt-4'>
-          <h3 class='city-section-title-sm'>Why Experienced Movers in  $city Make Relocation Easier</h3>
-          <p>Professional relocation is about timing, coordination, and packing quality. Fragile kitchen items? Packed separately. Glass tables? Corner protected. Washing machine installation? Done carefully after unloading.</p>
-          <p>A trained mover in <strong> $city</strong> understands apartment restrictions, society permissions, local transport timing, and road conditions — without unnecessary delays. Our staff uses lifting belts, furniture sliders, and layered wrapping for delicate items.</p>
-          <p>We keep pricing fair: transparent quotations, no hidden loading charges, and clear discussion before booking is confirmed.</p>
-
-      
-        </div>
-   ";
-} 
+}

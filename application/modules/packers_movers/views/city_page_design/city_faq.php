@@ -20,7 +20,7 @@
             foreach ($faqs as $i => $faq):
             ?>
             <div class="city-faq-item">
-              <button class="city-faq-btn <?= $i === 0 ? 'active' : '' ?>" type="button"
+              <button class="city-faq-btn <?= $i === 0 ? '' : 'collapsed' ?>" type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#cfaq<?= $i ?>"
                       aria-expanded="<?= $i === 0 ? 'true' : 'false' ?>">
@@ -28,7 +28,7 @@
                 <span><?= $faq['q'] ?></span>
                 <i class="bi bi-chevron-down faq-chevron"></i>
               </button>
-              <div id="cfaq<?= $i ?>" class="collapse <?= $i === 0 ? 'show' : '' ?>">
+              <div id="cfaq<?= $i ?>" class="collapse <?= $i === 0 ? 'show' : '' ?>" data-bs-parent="#cityFaqAccordion">
                 <div class="city-faq-body"><?= $faq['a'] ?></div>
               </div>
             </div>

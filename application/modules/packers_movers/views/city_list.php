@@ -83,24 +83,24 @@ $state = ucwords($state);
 </section>
     <div class="pm-list-service-page">
     <div class="container pm-list-feature-section">
-        <div class="row">
+        <div class="row g-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
             <?php
             $st = str_replace(" ", "-", $state);
             foreach ($cities as $ct) :
                 $link = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
                 $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
             ?>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                <div class="col">
                     <a href="<?= site_url("$link-packers-movers-$statename") ?>" class="pm-list-city-card-link d-block h-100 text-decoration-none">
-                        <div class="pm-list-city-card card border-0 shadow h-100">
+                        <div class="pm-list-city-card card border-0 h-100">
                             <div class="card-body pm-list-card-body">
-                                <!-- Truck Icon on Left -->
+                                <!-- Location Pin Icon -->
                                 <div class="pm-list-icon">
-                                    <i class="bi bi-truck"></i>
+                                    <i class="bi bi-geo-alt-fill"></i>
                                 </div>
-                                <!-- Title on Right -->
+                                <!-- Title -->
                                 <div class="pm-list-city-name">
-                                    <h5>Packers and Movers <b><?= $ct['nm'] ?></b></h5>
+                                    <h5><b><?= $ct['nm'] ?></b></h5>
                                 </div>
                             </div>
                         </div>
