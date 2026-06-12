@@ -1,0 +1,610 @@
+/* ==========================================================================
+   Sidebar & Details Section Layout (Modern & Premium Redesign)
+   ========================================================================== */
+
+.service-details-section,
+.pm-city-details-section {
+    padding-top: 100px;
+}
+
+.service-details-section .row,
+.pm-city-details-section .row {
+    --bs-gutter-x: 2.5rem; /* Increase gap between content and sidebar */
+}
+
+@media (max-width: 991.98px) {
+    .service-details-section,
+    .pm-city-details-section {
+        padding-top: 40px;
+    }
+}
+
+.service-sidebar,
+.pm-city-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-widget {
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid rgba(14, 27, 61, 0.06);
+    box-shadow: 0 10px 30px rgba(14, 27, 61, 0.02);
+    padding: 28px 24px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-widget:hover {
+    box-shadow: 0 15px 40px rgba(14, 27, 61, 0.05);
+}
+
+.sidebar-title-header {
+    position: relative;
+}
+
+.sidebar-title-header .widget-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.sidebar-title-header .widget-title i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.sidebar-title-header .title-underline {
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.sidebar-widget .widget-desc {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Services and About Sidebar List styling */
+.sidebar-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.sidebar-services-list li {
+    margin-bottom: 8px;
+}
+
+.sidebar-services-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-services-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: var(--primary-color) !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(14, 27, 61, 0.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-services-list li a .service-icon {
+    font-size: 16px;
+    color: var(--primary-color);
+    opacity: 0.85;
+    transition: all 0.2s ease;
+}
+
+.sidebar-services-list li a .service-name {
+    transition: all 0.2s ease;
+}
+
+.sidebar-services-list li a .arrow-icon {
+    font-size: 11px;
+    color: var(--text-light-muted);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover State */
+.sidebar-services-list li a:hover {
+    background-color: var(--bg-light);
+    border-color: var(--text-light);
+    transform: translateX(4px);
+}
+
+.sidebar-services-list li a:hover .service-icon {
+    color: var(--accent-color);
+    opacity: 1;
+}
+
+.sidebar-services-list li a:hover .arrow-icon {
+    transform: translateX(2px);
+    color: var(--accent-color);
+}
+
+/* Active State */
+.sidebar-services-list li a.active {
+    background-color: var(--border-color); /* Silver color */
+    border-color: var(--border-color);
+    border-left: 4px solid var(--accent-color); /* Brand Orange left border */
+    padding-left: 12px; /* Adjust padding to align text perfectly with left border */
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+.sidebar-services-list li a.active .service-icon {
+    color: var(--accent-color);
+    opacity: 1;
+}
+
+.sidebar-services-list li a.active .arrow-icon {
+    color: var(--accent-color);
+    transform: translateX(2px);
+}
+
+/* View All Services / Show Less Toggle Button */
+.sidebar-show-all-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    border: 1.5px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color) !important;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.sidebar-show-all-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    box-shadow: 0 4px 12px rgba(14, 27, 61, 0.15);
+}
+
+/* Sidebar Hidden Services Animation */
+.sidebar-service-hidden {
+    display: none;
+}
+
+/* CTA Widget Design (Redesigned with Truck Background) */
+.widget-contact-cta {
+    background-image: linear-gradient(to right, rgba(14, 27, 61, 0.9) 45%, rgba(14, 27, 61, 0.35) 85%), url('../images/slider/truck_contact_bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border: none !important;
+    color: var(--white) !important;
+    position: relative;
+    overflow: hidden;
+    padding: 35px 30px !important;
+    min-height: 280px;
+    z-index: 1;
+}
+
+.widget-contact-cta::before {
+    display: none !important; /* Hide previous decorative circle */
+}
+
+.widget-contact-cta .cta-inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+}
+
+.widget-contact-cta .cta-headset-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.widget-contact-cta .cta-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white) !important;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    max-width: 65%;
+}
+
+.widget-contact-cta .cta-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 240px;
+}
+
+.widget-contact-cta .btn-sidebar-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 14.5px;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.widget-contact-cta .btn-sidebar-call {
+    background-color: var(--accent-color) !important; /* Brand Orange */
+    color: var(--white) !important;
+}
+
+.widget-contact-cta .btn-sidebar-call:hover {
+    background-color: var(--accent-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(255, 78, 0, 0.3);
+}
+
+.widget-contact-cta .btn-sidebar-whatsapp {
+    background-color: #25d366 !important; /* WhatsApp Green */
+    color: var(--white) !important;
+}
+
+.widget-contact-cta .btn-sidebar-whatsapp:hover {
+    background-color: #20ba5a !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* ==========================================================================
+   Redesigned Trusted Badges (Why Choose Us Widget)
+   ========================================================================== */
+.widget-trusted-badges {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(14, 27, 61, 0.08) !important;
+}
+
+.widget-trusted-badges .widget-sub-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white) !important;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.widget-trusted-badges .widget-sub-title i {
+    color: #ffc107 !important; /* Gold/yellow check shield icon */
+    font-size: 20px;
+}
+
+.widget-trusted-badges .title-underline {
+    background-color: #ffc107 !important; /* Gold/yellow underline */
+    width: 40px;
+    height: 3px;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.trusted-points-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+/* Vertical dashed timeline line */
+.trusted-points-list::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    border-left: 1.5px dashed rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.trusted-points-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+    padding-left: 25px; /* space for the timeline */
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.trusted-points-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Dot on the timeline */
+.trusted-points-list li::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.trusted-points-list li:nth-child(1)::before { background-color: #3b82f6; }
+.trusted-points-list li:nth-child(2)::before { background-color: #10b981; }
+.trusted-points-list li:nth-child(3)::before { background-color: #f97316; }
+.trusted-points-list li:nth-child(4)::before { background-color: #ef4444; }
+.trusted-points-list li:nth-child(5)::before { background-color: #ffc107; }
+
+/* Horizontal connector line */
+.trusted-points-list li::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    width: 17px;
+    border-top: 1.5px dotted rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.trusted-points-list li .icon-wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #ffffff;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.trusted-points-list li:nth-child(1) .icon-wrapper { background-color: #2563eb; }
+.trusted-points-list li:nth-child(2) .icon-wrapper { background-color: #10b981; }
+.trusted-points-list li:nth-child(3) .icon-wrapper { background-color: #f97316; }
+.trusted-points-list li:nth-child(4) .icon-wrapper { background-color: #ef4444; }
+.trusted-points-list li:nth-child(5) .icon-wrapper { background-color: #ffc107; }
+
+.trusted-points-list li strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff !important;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.trusted-points-list li .point-desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Redesigned Safety CTA Banner Widget
+   ========================================================================== */
+.widget-safety-banner {
+    background-color: var(--white) !important; /* Blends with the image white background */
+    border: 1px solid var(--border-color) !important;
+    padding: 0 !important; /* Let the inner elements control spacing */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(14, 27, 61, 0.03) !important;
+    border-radius: 20px;
+}
+
+.safety-banner-inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 180px;
+}
+
+.safety-banner-graphic {
+    position: relative;
+    width: 45%;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Semi-circular yellow background is handled by the image circle itself */
+.safety-banner-graphic::before {
+    display: none;
+}
+
+.safety-banner-img {
+    width: 135%;
+    height: auto;
+    max-width: none;
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.safety-banner-info {
+    width: 55%;
+    padding: 20px 20px 20px 10px;
+    z-index: 2;
+}
+
+.safety-banner-eyebrow {
+    display: block;
+    color: #d97706; /* Dark amber/yellow-orange */
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.safety-banner-title {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.safety-banner-desc {
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.btn-safety-banner-quote {
+    background-color: #ffc107;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-safety-banner-quote:hover {
+    background-color: #ffb300;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn-safety-banner-quote i {
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+.btn-safety-banner-quote:hover i {
+    transform: translateX(2px);
+}
+
+/* ==========================================================================
+   Redesigned Nearby Cities Widget
+   ========================================================================== */
+.widget-nearby-cities {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    border: none !important;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(14, 27, 61, 0.08) !important;
+}
+
+.widget-nearby-cities .widget-sub-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white) !important;
+    margin: 0;
+}
+
+.widget-nearby-cities .widget-sub-title i {
+    color: #ffc107 !important; /* Gold/yellow marker pin icon */
+    font-size: 20px;
+}
+
+.widget-nearby-cities .widget-desc {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 13px;
+    margin-bottom: 20px !important;
+}
+
+/* Decorative background truck outline */
+.widget-nearby-cities .decorative-truck-bg {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 70px;
+    height: auto;
+    opacity: 0.75;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.widget-nearby-cities .decorative-truck-bg svg {
+    width: 100%;
+    height: auto;
+}
+
+.nearby-cities-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.nearby-city-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 50px;
+    padding: 8px 16px;
+    color: var(--white) !important;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.nearby-city-pill i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: #ffc107 !important; /* Gold circular background for arrow */
+    color: var(--primary-color) !important;
+    border-radius: 50%;
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+.nearby-city-pill:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-1px);
+}
+
+.nearby-city-pill:hover i {
+    transform: translateX(2px);
+}
+
