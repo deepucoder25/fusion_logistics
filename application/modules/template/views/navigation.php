@@ -167,11 +167,16 @@
 
   <!-- Full Screen Mega Menu (overlay menu when clicking hamburger) -->
   <nav class="mega-overlay" id="megaMenu" aria-label="Main navigation">
-    <button class="mega-close" id="closeMenu" aria-label="Close navigation menu">
-      <i class="bi bi-x"></i>
-    </button>
-
     <div class="mega-inner">
+      <!-- Mobile Menu Header with Logo & Close Button -->
+      <div class="mobile-menu-header d-flex align-items-center justify-content-between mb-4">
+        <a href="<?= site_url() ?>" class="menu-logo-wrap">
+          <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?>" class="menu-logo-img" loading="lazy">
+        </a>
+        <button class="mega-close" id="closeMenu" aria-label="Close navigation menu">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
 
       <!-- Navigation Accordion -->
       <div class="mobile-nav-list">
@@ -208,13 +213,17 @@
             <a href="<?= site_url('warehouse-and-storage') ?>" class="<?= $segment1 === 'warehouse-and-storage' || $segment1 === 'storage-services' ? 'active' : '' ?>">Warehouse &amp; Storage</a>
             <a href="<?= site_url('domestic-relocation') ?>" class="<?= $segment1 === 'domestic-relocation' ? 'active' : '' ?>">Domestic Relocation</a>
             <a href="<?= site_url('international-shifting') ?>" class="<?= $segment1 === 'international-shifting' ? 'active' : '' ?>">International Shifting</a>
-
           </div>
         </div>
 
         <!-- Locations (Branches) -->
         <div class="mobile-nav-item<?= $active_tab === 'locations' ? ' active' : '' ?>">
-          <a href="<?= site_url('our-branches') ?>" class="mobile-nav-link">Locations (Branches)</a>
+          <a href="<?= site_url('our-branches') ?>" class="mobile-nav-link">Branches</a>
+        </div>
+
+        <!-- Gallery -->
+        <div class="mobile-nav-item<?= $active_tab === 'gallery' ? ' active' : '' ?>">
+          <a href="<?= site_url('photo-gallery') ?>" class="mobile-nav-link">Gallery</a>
         </div>
         
         <!-- Contact Us -->
@@ -225,11 +234,22 @@
 
       <!-- Secondary Links -->
       <div class="mobile-sec-links">
-        <a href="<?= site_url('photo-gallery') ?>">Gallery</a>
         <a href="<?= site_url('reviews') ?>">Reviews</a>
         <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
         <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
-        <a href="<?= $megaWhatsappLink ?>" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+
+      <!-- Bottom Action CTA Buttons -->
+      <div class="mobile-menu-cta mt-4 d-flex flex-column gap-2">
+        <a href="<?= $phonehtml ?>" class="btn-mobile-menu-call d-flex align-items-center justify-content-center gap-2">
+          <i class="bi bi-telephone-fill"></i>
+          <span>Call: <?= $phone ?></span>
+        </a>
+        <a href="#" class="btn-mobile-menu-quote d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
+          <span>Get a Quote</span>
+          <i class="bi bi-arrow-right-short"></i>
+        </a>
       </div>
     </div>
   </nav>
@@ -250,6 +270,15 @@
       megaMenu.classList.remove('active');
       body.classList.remove('menu-open');
     });
+
+    // Close menu when clicking Get a Quote button so the modal is visible
+    const mobileQuoteBtn = document.querySelector('.btn-mobile-menu-quote');
+    if (mobileQuoteBtn) {
+      mobileQuoteBtn.addEventListener('click', () => {
+        megaMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      });
+    }
 
     // Toggle mobile dropdown accordions
     document.querySelectorAll('.mobile-dropdown-toggle').forEach(button => {

@@ -272,8 +272,19 @@
 
 </footer>
 
+<!-- Mobile Sticky Bottom Bar CTA -->
+<div class="mobile-sticky-footer d-flex d-lg-none justify-content-between align-items-center gap-2">
+  <a href="<?= $phonehtml ?>" class="btn-mobile-footer-call d-flex align-items-center justify-content-center gap-2 flex-grow-1">
+    <i class="bi bi-telephone-fill"></i>
+    <span>Call Now</span>
+  </a>
+  <a href="#" class="btn-mobile-footer-quote d-flex align-items-center justify-content-center gap-2 flex-grow-1" data-bs-toggle="modal" data-bs-target="#qteModal">
+    <i class="bi bi-patch-question-fill"></i>
+    <span>Get Quote</span>
+  </a>
+</div>
 
-  <?php $this->load->view('contacts/quotemodal'); ?>
+<?php $this->load->view('contacts/quotemodal'); ?>
   <?php $this->load->view('contacts/callmeback_modal'); ?>
   <?php $this->load->view('contacts/review_modal'); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -59,23 +59,34 @@ document.addEventListener("DOMContentLoaded", function () {
             // Helper to show field error
             function showError(inputEl, message) {
                 if (!inputEl) return;
-                inputEl.classList.add("input-error-highlight");
+                
+                let highlightEl = inputEl;
+                let container = inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl.parentElement;
+                
+                // If it is in a quote input group, highlight the group border instead of the input itself
+                const inputGroup = inputEl.closest(".quote-input-group");
+                if (inputGroup) {
+                    highlightEl = inputGroup;
+                }
+                
+                highlightEl.classList.add("input-error-highlight");
                 
                 const errorDiv = document.createElement("div");
                 errorDiv.className = "field-error-msg";
                 errorDiv.innerHTML = `<i class="bi bi-exclamation-circle-fill"></i> ${message}`;
                 
-                // Find the wrapper (either .field-wrap, .form-group, or parent)
-                const wrapper = inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl.parentElement;
-                
-                // Force wrap if wrapper is a flex container
-                const computedStyle = window.getComputedStyle(wrapper);
-                if (computedStyle.display === "flex") {
-                    wrapper.style.flexWrap = "wrap";
+                if (inputGroup) {
+                    // For quote-input-group, append the error message after the group (not inside it)
+                    inputGroup.parentNode.insertBefore(errorDiv, inputGroup.nextSibling);
+                } else {
+                    // Force wrap if container is a flex container
+                    const computedStyle = window.getComputedStyle(container);
+                    if (computedStyle.display === "flex") {
+                        container.style.flexWrap = "wrap";
+                    }
+                    // Append inside the container
+                    container.appendChild(errorDiv);
                 }
-                
-                // Append inside the wrapper
-                wrapper.appendChild(errorDiv);
             }
 
             // Validate Name

@@ -740,3 +740,82 @@
     75% { transform: rotate(-5deg) scale(1.08); }
     85% { transform: rotate(5deg) scale(1.08); }
 }
+
+/* Mobile Sticky Bottom Bar CTA */
+.mobile-sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-top: 1px solid rgba(14, 27, 61, 0.08) !important;
+    box-shadow: 0 -4px 20px rgba(14, 27, 61, 0.06) !important;
+    padding: 10px 16px;
+    z-index: 99999 !important;
+}
+
+.btn-mobile-footer-call {
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
+    border: 1.5px solid var(--primary-color) !important;
+    border-radius: 30px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-mobile-footer-call:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+.btn-mobile-footer-quote {
+    background: linear-gradient(135deg, var(--gradient-orange-start) 0%, var(--gradient-orange-end) 100%) !important;
+    color: var(--white) !important;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(255, 78, 0, 0.15) !important;
+    cursor: pointer;
+    animation: mobile-pulse 2s infinite ease-in-out;
+}
+
+.btn-mobile-footer-quote:hover {
+    background: linear-gradient(135deg, var(--gradient-orange-hover-start) 0%, var(--gradient-orange-hover-end) 100%) !important;
+    box-shadow: 0 6px 18px rgba(255, 78, 0, 0.25) !important;
+    transform: translateY(-1px);
+    animation: none !important;
+}
+
+@keyframes mobile-pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(255, 78, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(255, 78, 0, 0.35);
+    }
+}
+
+@media (max-width: 991.98px) {
+    body {
+        padding-bottom: 64px !important; /* Spacing for the sticky mobile/tablet footer */
+    }
+}
