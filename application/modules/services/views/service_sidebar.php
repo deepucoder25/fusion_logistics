@@ -24,11 +24,6 @@
                 ['slug' => 'warehouse-and-storage','name' => 'Warehouse & Storage',  'icon' => 'bi-box-seam-fill'],
                 ['slug' => 'domestic-relocation',  'name' => 'Domestic Relocation',  'icon' => 'bi-truck'],
                 ['slug' => 'international-shifting','name' => 'International Shifting','icon' => 'bi-globe-americas'],
-
-                ['slug' => 'intercity-shifting',   'name' => 'Intercity Shifting',   'icon' => 'bi-signpost-split-fill'],
-                ['slug' => 'local-shifting',       'name' => 'Local Shifting',       'icon' => 'bi-geo-alt-fill'],
-                ['slug' => 'logistic-services',    'name' => 'Logistic Services',    'icon' => 'bi-truck-flatbed'],
-                ['slug' => 'pet-relocation',       'name' => 'Pet Relocation',       'icon' => 'bi-heart-pulse-fill'],
             ];
 
             foreach ($sidebar_services as $s):

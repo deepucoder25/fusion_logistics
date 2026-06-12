@@ -333,7 +333,7 @@
 @media (max-width: 991.98px) {
     .fusion-hero-slider {
         padding: 65px 0 110px;
-        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.75) 60%, var(--white) 100%), url('../images/slider/fusion_slider.jpg') !important;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.92) 60%, var(--white) 100%), url('../images/slider/fusion_slider.jpg') !important;
         background-size: 100% auto !important;
         background-position: right top !important;
         background-repeat: no-repeat;
