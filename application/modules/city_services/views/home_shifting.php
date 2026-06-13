@@ -6,7 +6,7 @@
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>
             <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-branches') ?>">Branches</a>
+            <a href="<?= site_url('our-locations') ?>">Locations</a>
             <span class="bc-sep">›</span>
             <span class="bc-current">Home Shifting in <?= $city ?></span>
         </nav>
@@ -59,7 +59,7 @@
 
                         <h3 class="mt-4">Home Shifting Service in <?= $city ?></h3>
                         <p>
-                            In today's date <strong><?= $company3 ?></strong> is the best renowned, well-trusted and reliable company also listed as one of the largest growing companies with its daily updated highly skilled members and personalised professionals. The company was first established by Ram Anugrah Singh on August 20, 1986 in the state of Mumbai. And by that early initial stage of the company, their committed and dedicated team members have been always working with one motive and tendency to serve their customers to the best highest possible under whatsoever circumstances. By continuous effort and with their dedicated services they are successful to have 100+ branches across India. While serving across the nation as well as globally they have raised their company’s name and fame to the best and most effective packers and movers. Overall the company has lots more to serve you, if you just wish to go with.
+                            In today's date <strong><?= $company3 ?></strong> is the best renowned, well-trusted and reliable company also listed as one of the largest growing companies with its daily updated highly skilled members and personalised professionals. The company was first established by Ram Anugrah Singh on August 20, 1986 in the state of Mumbai. And by that early initial stage of the company, their committed and dedicated team members have been always working with one motive and tendency to serve their customers to the best highest possible under whatsoever circumstances. By continuous effort and with their dedicated services they are successful to have 100+ locations across India. While serving across the nation as well as globally they have raised their company’s name and fame to the best and most effective packers and movers. Overall the company has lots more to serve you, if you just wish to go with.
                         </p>
                         <img loading="lazy" src="<?= base_url('assets/images/services_modules/home.jpg') ?>" alt="home shifting in <?= $city ?>" class="img-fluid rounded my-3 w-100">
                         <p>

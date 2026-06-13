@@ -81,7 +81,7 @@
           <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right link-arrow"></i>Why Choose Us</a></li>
           <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right link-arrow"></i>Blog</a></li>
           <li><a href="<?= site_url('reviews') ?>"><i class="bi bi-chevron-right link-arrow"></i>Reviews</a></li>
-          <li><a href="<?= site_url('our-branches') ?>"><i class="bi bi-chevron-right link-arrow"></i>Our Branches</a></li>
+          <li><a href="<?= site_url('our-locations') ?>"><i class="bi bi-chevron-right link-arrow"></i>Our Locations</a></li>
           <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-chevron-right link-arrow"></i>Contact Us</a></li>
         </ul>
       </div>

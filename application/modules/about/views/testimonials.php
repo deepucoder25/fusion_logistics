@@ -66,7 +66,7 @@
                     </div>
                     <div class="bc-feature-text">
                         <span class="text-line-1">Pan-India</span>
-                        <span class="text-line-2">100+ Branches</span>
+                        <span class="text-line-2">100+ Locations</span>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                             </div>
                             <h4>Smooth Office Relocation</h4>
                             <p>
-                                "We had to move our IT office branch with 45 work stations from Pune to Hyderabad. The planning and execution by <?= $company3 ?> was flawless. We resumed our operations on Monday morning without any downtime."
+                                "We had to move our IT office location with 45 work stations from Pune to Hyderabad. The planning and execution by <?= $company3 ?> was flawless. We resumed our operations on Monday morning without any downtime."
                             </p>
                             <div class="user-meta">
                                 <div class="user-profile">

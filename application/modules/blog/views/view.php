@@ -72,7 +72,7 @@
                         </div>
                         <div class="bc-feature-text">
                             <span class="text-line-1">Pan-India</span>
-                            <span class="text-line-2">100+ Branches</span>
+                            <span class="text-line-2">100+ Locations</span>
                         </div>
                     </div>
                 </div>

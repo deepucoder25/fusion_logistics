@@ -66,7 +66,7 @@
                     </div>
                     <div class="bc-feature-text">
                         <span class="text-line-1">Pan-India</span>
-                        <span class="text-line-2">100+ Branches</span>
+                        <span class="text-line-2">100+ Locations</span>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
 
                     <h3>Our Vision</h3>
                     <p>
-                        To set the national benchmark for logistics safety and excellence. We plan to continuously expand our pan-India network of branches, implement advanced real-time tracking systems, and train our workforce in cutting-edge safety protocols.
+                        To set the national benchmark for logistics safety and excellence. We plan to continuously expand our pan-India network of locations, implement advanced real-time tracking systems, and train our workforce in cutting-edge safety protocols.
                     </p>
 
                     <div class="about-vision-mission">
@@ -114,7 +114,7 @@
 
                     <h3>Credibility and Standards</h3>
                     <p>
-                        We are ISO certified and accredited under major logistics transport guidelines. Our branch teams coordinate directly with local associations, building managers, and transit checkpoints to ensure no unwanted delays occur during transportation.
+                        We are ISO certified and accredited under major logistics transport guidelines. Our local teams coordinate directly with local associations, building managers, and transit checkpoints to ensure no unwanted delays occur during transportation.
                     </p>
                     <ul>
                         <li><strong>ISO 9001:2015 Certified</strong>: Assured quality management systems.</li>

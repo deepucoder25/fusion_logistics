@@ -155,7 +155,7 @@
                             <div class="card-icon-wrap"><i class="bi bi-shield-check"></i></div>
                             <div class="card-info">
                                 <h5>National Network</h5>
-                                <p>Extensive network of branch offices and warehouses across India.</p>
+                                <p>Extensive network of local offices and warehouses across India.</p>
                             </div>
                         </div>
                         <div class="service-why-choose-card">

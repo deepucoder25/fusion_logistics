@@ -66,7 +66,7 @@
                     </div>
                     <div class="bc-feature-text">
                         <span class="text-line-1">Pan-India</span>
-                        <span class="text-line-2">100+ Branches</span>
+                        <span class="text-line-2">100+ Locations</span>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                             </h2>
                             <div id="faq-collapse-5" class="accordion-collapse collapse" aria-labelledby="faq-heading-5" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Yes. We supply tracking options and maintain a dedicated support desk. The branch manager coordinating your shifting will remain in direct contact to provide regular status updates on where the vehicle is and its estimated arrival time.
+                                    Yes. We supply tracking options and maintain a dedicated support desk. The location manager coordinating your shifting will remain in direct contact to provide regular status updates on where the vehicle is and its estimated arrival time.
                                 </div>
                             </div>
                         </div>

@@ -375,7 +375,7 @@
 
     
     .google-reviews-badge {
-        display: none !important;
+        margin-bottom: 25px;
     }
     
     .hero-actions {
@@ -483,7 +483,36 @@
         margin-bottom: 25px;
     }
     
-
+    .google-reviews-badge {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 0;
+        padding: 12px 14px;
+        margin-bottom: 25px;
+    }
+    
+    .reviews-vertical-divider {
+        margin: 0 16px;
+        height: 36px;
+    }
+    
+    .reviews-quote-wrap {
+        flex: 0 0 100%;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding-top: 10px;
+        margin-top: 6px;
+        align-items: center;
+    }
+    
+    .quote-text {
+        text-align: center;
+        font-size: 12.5px;
+    }
+    
+    .quote-author {
+        justify-content: center;
+    }
 }
 
 /* Extra small devices (Phones, less than 480px) */

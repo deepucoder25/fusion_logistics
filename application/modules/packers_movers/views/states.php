@@ -9,13 +9,13 @@
                     <i class="bi bi-house-door-fill"></i> Home
                 </a>
                 <span class="bc-nav-sep"><i class="bi bi-chevron-right"></i></span>
-                <span class="bc-nav-current">Our Branches</span>
+                <span class="bc-nav-current">Our Locations</span>
             </nav>
         </div>
         
         <div class="row align-items-center">
             <div class="col-lg-7 col-md-8 col-12">
-                <h1 class="bc-main-title fw-extrabold mb-3">Our Branches</h1>
+                <h1 class="bc-main-title fw-extrabold mb-3">Our Locations</h1>
                 <p class="bc-desc mb-0"><?= $company3 ?> Packers and Movers — Delivering trusted relocation services across <?= $statesCovered ?> states in India.</p>
             </div>
             <!-- Right side column kept empty to let the background image showcase the truck & workers -->
@@ -64,7 +64,7 @@
                     </div>
                     <div class="bc-feature-text">
                         <span class="text-line-1">Pan-India</span>
-                        <span class="text-line-2">100+ Branches</span>
+                        <span class="text-line-2">100+ Locations</span>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ $state = [
 ];
 ?>
 
-<!-- Branch Section -->
+<!-- Locations Section -->
 <section class="portfolio-area py-5 bg-light">
     <div class="container">
 
@@ -103,19 +103,19 @@ $state = [
                 $badge_text = 'Active Hub';
                 if (strtolower($item['category']) === 'delhi') {
                     $info_text = 'National Capital Region, Noida, Gurgaon & hubs';
-                    $badge_text = '20+ Branches';
+                    $badge_text = '20+ Locations';
                 } elseif (strtolower($item['category']) === 'maharashtra') {
                     $info_text = 'Mumbai, Pune, Nagpur & major commercial hubs';
-                    $badge_text = '15+ Branches';
+                    $badge_text = '15+ Locations';
                 } elseif (strtolower($item['category']) === 'bangalore') {
                     $info_text = 'Silicon Valley, Electronic City & tech suburbs';
-                    $badge_text = '12+ Branches';
+                    $badge_text = '12+ Locations';
                 } elseif (strtolower($item['category']) === 'west bengal') {
                     $info_text = 'Kolkata, Siliguri, Howrah & metro zones';
-                    $badge_text = '10+ Branches';
+                    $badge_text = '10+ Locations';
                 } elseif (strtolower($item['category']) === 'uttar pradesh') {
                     $info_text = 'Noida, Lucknow, Kanpur & major cities';
-                    $badge_text = '8+ Branches';
+                    $badge_text = '8+ Locations';
                 }
             ?>
                 
@@ -135,7 +135,7 @@ $state = [
 
                             <!-- Hover Overlay -->
                             <div class="pm-state-hover-overlay">
-                                <a href="<?= site_url($item['link']) ?>" class="explore-icon" aria-label="Explore <?= $item['category'] ?> Branches">
+                                <a href="<?= site_url($item['link']) ?>" class="explore-icon" aria-label="Explore <?= $item['category'] ?> Locations">
                                     <i class="bi bi-arrow-right-short"></i>
                                 </a>
                             </div>
@@ -154,7 +154,7 @@ $state = [
                             
                             <!-- Explore Button -->
                             <a href="<?= site_url($item['link']) ?>" class="pm-state-cta-btn">
-                                <span>Explore Branches</span>
+                                <span>Explore Locations</span>
                                 <i class="bi bi-arrow-right-short"></i>
                             </a>
                         </div>

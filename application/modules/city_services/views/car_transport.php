@@ -6,7 +6,7 @@
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>
             <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-branches') ?>">Branches</a>
+            <a href="<?= site_url('our-locations') ?>">Locations</a>
             <span class="bc-sep">›</span>
             <span class="bc-current">Car Transportation in <?= $city ?></span>
         </nav>

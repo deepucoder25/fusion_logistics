@@ -15,8 +15,8 @@ $state = ucwords($state);
                     <i class="bi bi-house-door-fill"></i> Home
                 </a>
                 <span class="bc-nav-sep"><i class="bi bi-chevron-right"></i></span>
-                <a href="<?= site_url('our-branches') ?>" class="bc-nav-item text-decoration-none">
-                    Our Branches
+                <a href="<?= site_url('our-locations') ?>" class="bc-nav-item text-decoration-none">
+                    Our Locations
                 </a>
                 <span class="bc-nav-sep"><i class="bi bi-chevron-right"></i></span>
                 <span class="bc-nav-current"><?= $state ?></span>
@@ -74,7 +74,7 @@ $state = ucwords($state);
                     </div>
                     <div class="bc-feature-text">
                         <span class="text-line-1">Pan-India</span>
-                        <span class="text-line-2">100+ Branches</span>
+                        <span class="text-line-2">100+ Locations</span>
                     </div>
                 </div>
             </div>

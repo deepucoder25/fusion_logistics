@@ -66,7 +66,7 @@
                     </div>
                     <div class="bc-feature-text">
                         <span class="text-line-1">Pan-India</span>
-                        <span class="text-line-2">100+ Branches</span>
+                        <span class="text-line-2">100+ Locations</span>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                     <div class="quality-commitment-block">
                         <h5>Our Quality Commitment</h5>
                         <p>
-                            "We believe that a satisfied client is our greatest advertisement. Every single move receives the absolute dedication of our branch managers, supervisors, packing experts, and customer care executives."
+                            "We believe that a satisfied client is our greatest advertisement. Every single move receives the absolute dedication of our location managers, supervisors, packing experts, and customer care executives."
                         </p>
                     </div>
 

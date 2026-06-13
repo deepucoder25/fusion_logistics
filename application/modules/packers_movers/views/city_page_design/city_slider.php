@@ -8,7 +8,7 @@
           <nav class="bc-nav pm-city-slider-nav" style="font-size: 13.5px; font-weight: 700; color: var(--primary-color);">
              <a href="<?= site_url() ?>" style="color: var(--primary-color); text-decoration: none;">Home</a>
              <span class="bc-sep" style="color: var(--accent-color); font-weight: bold; margin: 0 4px;">›</span>
-             <a href="<?= site_url('our-branches') ?>" style="color: var(--primary-color); text-decoration: none;">Branches</a>
+             <a href="<?= site_url('our-locations') ?>" style="color: var(--primary-color); text-decoration: none;">Locations</a>
              <span class="bc-sep" style="color: var(--accent-color); font-weight: bold; margin: 0 4px;">›</span>
              <span class="bc-state" style="color: var(--primary-color);"><?= $state ?></span>
              <span class="bc-sep" style="color: var(--accent-color); font-weight: bold; margin: 0 4px;">›</span>

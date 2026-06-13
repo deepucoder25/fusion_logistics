@@ -99,7 +99,7 @@
                 <div class="icon-wrapper"><i class="bi bi-geo-alt-fill"></i></div>
                 <div>
                     <strong>Pan-India Coverage</strong>
-                    <p class="m-0 point-desc">100+ branches across <?= $statesCovered ?> states</p>
+                    <p class="m-0 point-desc">100+ locations across <?= $statesCovered ?> states</p>
                 </div>
             </li>
         </ul>

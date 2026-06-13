@@ -48,7 +48,8 @@ $route["car-transportation-service"] = "services/car";
 $route["infrastructure"] = "about/infrastructure";
 $route["why-choose-us"] = "about/choose";
 
-// Branch/City Routes
+// Location/City Routes
+$route["our-locations"] = "packers_movers/state";
 $route["our-branches"] = "packers_movers/state";
 $route["packers-movers-(:any)-india"] = "packers_movers/state_services/$1";
 $route["(:any)-packers-movers-(:any)"] = "packers_movers/city/$2/$1";
