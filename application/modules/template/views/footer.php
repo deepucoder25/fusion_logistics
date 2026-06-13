@@ -1,3 +1,18 @@
+<?php
+if (!empty($branch_info) && !empty($branch_info['address'])) {
+    $address = $branch_info['address'];
+    $phone = $branch_info['phone'];
+    $phonehtml = 'tel:' . $branch_info['phone'];
+    $mail = $branch_info['email'];
+    $mailhtml = 'mailto:' . $branch_info['email'];
+} elseif (!empty($state)) {
+    $address = 'Office No. 2, Vista Enclave CHS., Sector - 2, Taloja Phase - 1, Navi Mumbai - 410208.';
+    $phone = '9076012200';
+    $phonehtml = 'tel:9076012200';
+    $mail = 'aryan@fusionlogistics.in';
+    $mailhtml = 'mailto:aryan@fusionlogistics.in';
+}
+?>
 <!-- FOOTER SECTION -->
 <footer class="footer-section">
 
@@ -82,6 +97,7 @@
           <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right link-arrow"></i>Blog</a></li>
           <li><a href="<?= site_url('reviews') ?>"><i class="bi bi-chevron-right link-arrow"></i>Reviews</a></li>
           <li><a href="<?= site_url('our-locations') ?>"><i class="bi bi-chevron-right link-arrow"></i>Our Locations</a></li>
+          <li><a href="<?= site_url('branches') ?>"><i class="bi bi-chevron-right link-arrow"></i>Our Branches</a></li>
           <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-chevron-right link-arrow"></i>Contact Us</a></li>
         </ul>
       </div>

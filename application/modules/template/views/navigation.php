@@ -16,6 +16,8 @@
       $active_tab = 'services';
   } elseif ($class === 'packers_movers' || $segment1 === 'our-branches' || $segment1 === 'our-locations') {
       $active_tab = 'locations';
+  } elseif ($segment1 === 'branches') {
+      $active_tab = 'branches';
   } elseif ($class === 'blog' || $segment1 === 'blog') {
       $active_tab = 'blog';
   } elseif ($class === 'contacts' || $segment1 === 'contact-us') {
@@ -64,6 +66,9 @@
 
         <!-- Locations -->
         <a href="<?= site_url('our-locations') ?>" class="nav-link<?= $active_tab === 'locations' ? ' active' : '' ?>">Locations</a>
+        
+        <!-- Branches -->
+        <a href="<?= site_url('branches') ?>" class="nav-link<?= $active_tab === 'branches' ? ' active' : '' ?>">Branches</a>
         
         <!-- Gallery -->
         <a href="<?= site_url('photo-gallery') ?>" class="nav-link<?= $active_tab === 'gallery' ? ' active' : '' ?>">Gallery</a>
@@ -157,6 +162,11 @@
         <!-- Locations -->
         <div class="mobile-nav-item<?= $active_tab === 'locations' ? ' active' : '' ?>">
           <a href="<?= site_url('our-locations') ?>" class="mobile-nav-link">Locations</a>
+        </div>
+
+        <!-- Branches -->
+        <div class="mobile-nav-item<?= $active_tab === 'branches' ? ' active' : '' ?>">
+          <a href="<?= site_url('branches') ?>" class="mobile-nav-link">Branches</a>
         </div>
 
         <!-- Gallery -->

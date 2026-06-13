@@ -60,7 +60,7 @@ class MX_Controller
         $this->comp['mail'] = 'support@mycompany.com';    
         $this->comp['mailhtml'] = "mailto:support@mycompany.com";
         $this->comp['company3'] = 'Fusion Logistics Pvt. Ltd.';
-        $this->comp['companydomain'] = 'mycompany.com';
+        $this->comp['companydomain'] = 'fusionpackers.com';
 
         $this->comp['facebookhtml'] = "";
         $this->comp['youtubehtml'] = "";
@@ -94,6 +94,101 @@ class MX_Controller
         $this->comp['datePublished'] = "15 May, 2026";
         $this->comp['reviewBody'] = "Best Packing And Moving Company in India.";
         $this->comp['reviewperson'] = "Arshad Ali";
+
+        // Dynamic branch overrides for state-specific pages
+        $state = '';
+        if (CI::$APP->uri->rsegment(1) == 'packers_movers' && in_array(CI::$APP->uri->rsegment(2), array('state_services', 'city'))) {
+            $state = CI::$APP->uri->rsegment(3);
+        }
+
+        if (!empty($state)) {
+            $state = str_replace("_", " ", $state);
+            $state = ucwords(str_replace("-", " ", $state));
+            
+            $st_lower = strtolower(trim($state));
+            $branch_title = '';
+            $branch_address = '';
+            $branch_phone = '';
+            $branch_phonehtml = '';
+            $branch_email = '';
+            $branch_emailhtml = '';
+            $branch_manager = '';
+            
+            if (strpos($st_lower, 'maharashtra') !== false) {
+                $branch_title = 'Mumbai Branch Office';
+                $branch_address = 'Office No. 2, Vista Enclave CHS., Sector - 2, Taloja Phase - 1, Navi Mumbai - 410208.';
+                $branch_phone = '9076012200';
+                $branch_phonehtml = 'tel:+919076012200';
+                $branch_email = 'aryan@fusionlogistics.in';
+                $branch_emailhtml = 'mailto:aryan@fusionlogistics.in';
+                $branch_manager = 'Aryan Choudhary (Business Head)';
+            } elseif (strpos($st_lower, 'tamil') !== false) {
+                $branch_title = 'Chennai Branch Office';
+                $branch_address = 'Office No. 62, Micro Marble, 2nd Main Road, Balaji Nagar, Puzhal Kavangarai, Chennai, Tamilnadu- 600066.';
+                $branch_phone = '9076018800';
+                $branch_phonehtml = 'tel:+919076018800';
+                $branch_email = 'sunilsharma@fusionlogistics.in';
+                $branch_emailhtml = 'mailto:sunilsharma@fusionlogistics.in';
+                $branch_manager = 'Sunil Sharma (Business Head)';
+            } elseif (strpos($st_lower, 'delhi') !== false || strpos($st_lower, 'haryana') !== false) {
+                $branch_title = 'Delhi / NCR Branch Office';
+                $branch_address = '17/6, Delhi Mathura Road, Near Sarpunch Colony, Metro Pilor No. 763, Faridabad -121001';
+                $branch_phone = '9076014400';
+                $branch_phonehtml = 'tel:+919076014400';
+                $branch_email = 'vikas@fusionlogistics.in';
+                $branch_emailhtml = 'mailto:vikas@fusionlogistics.in';
+                $branch_manager = 'Vikas Bharti (Business Head)';
+            } elseif (strpos($st_lower, 'telangana') !== false) {
+                $branch_title = 'Hyderabad Branch Office';
+                $branch_address = 'Office Pl.No. 38, SY.NO. 94/P, Marri Ram Reddy Colony, Bowenpally, Secunderabad- 500011, Telangana.';
+                $branch_phone = '9076016600';
+                $branch_phonehtml = 'tel:+919076016600';
+                $branch_email = 'somsing@fusionlogistics.in';
+                $branch_emailhtml = 'mailto:somsing@fusionlogistics.in';
+                $branch_manager = 'Som Singh (Business Head)';
+            } elseif (strpos($st_lower, 'punjab') !== false) {
+                $branch_title = 'Ludhiana Branch Office';
+                $branch_address = 'Office 1371, MiG, Sector 32, Chandigarh Road, Ludhiana, Punjab - 141010.';
+                $branch_phone = '9076015500';
+                $branch_phonehtml = 'tel:+919076015500';
+                $branch_email = 'aggarwal.krishan@fusionlogistics.in';
+                $branch_emailhtml = 'mailto:aggarwal.krishan@fusionlogistics.in';
+                $branch_manager = 'Krishan Agarwal (Business Head)';
+            } elseif (strpos($st_lower, 'gujarat') !== false) {
+                $branch_title = 'Ahmedabad Branch Office';
+                $branch_address = 'Office A-123, Bijal Business Centre, Near Aslali Circle, Aslali, Ahmedabad, Gujarat - 382427.';
+                $branch_phone = '9076023300';
+                $branch_phonehtml = 'tel:+919076023300';
+                $branch_email = 'sunilkumar@fusionlogistics.in';
+                $branch_emailhtml = 'mailto:sunilkumar@fusionlogistics.in';
+                $branch_manager = 'Sunil Choudhary (Business Head)';
+            }
+            
+            if (!empty($branch_address)) {
+                $this->comp['address'] = $branch_address;
+                $this->comp['phone'] = $branch_phone;
+                $this->comp['phonehtml'] = $branch_phonehtml;
+                $this->comp['mail'] = $branch_email;
+                $this->comp['mailhtml'] = $branch_emailhtml;
+                
+                $this->comp['branch_info'] = array(
+                    'title' => $branch_title,
+                    'address' => $branch_address,
+                    'phone' => $branch_phone,
+                    'phonehtml' => $branch_phonehtml,
+                    'email' => $branch_email,
+                    'emailhtml' => $branch_emailhtml,
+                    'manager' => $branch_manager
+                );
+            } else {
+                // If it's a state page but no branch exists, fallback to Head Office Navi Mumbai details
+                $this->comp['address'] = 'Office No. 2, Vista Enclave CHS., Sector - 2, Taloja Phase - 1, Navi Mumbai - 410208.';
+                $this->comp['phone'] = '9076012200';
+                $this->comp['phonehtml'] = 'tel:9076012200';
+                $this->comp['mail'] = 'aryan@fusionlogistics.in';
+                $this->comp['mailhtml'] = 'mailto:aryan@fusionlogistics.in';
+            }
+        }
 
         /* autoload module items */
         $this->load->_autoloader($this->autoload);

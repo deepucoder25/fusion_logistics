@@ -128,5 +128,12 @@ class Contacts extends MX_Controller
         echo Modules::run('template/layout2', $data);
     }
 
-    
+    function branches()
+    {
+        $data['title'] = "Our Branches | " . $this->comp['company3'];
+        $data['description'] = "Find " . $this->comp['company3'] . " branch locations across India. Contact our Navi Mumbai head office or other regional offices.";
+        $data['module'] = "contacts";
+        $data['view_file'] = "branches";
+        echo Modules::run('template/layout2', $data);
+    }
 }

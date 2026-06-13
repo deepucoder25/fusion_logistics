@@ -78,6 +78,31 @@ $state = [
         "image" => "maharashtra.jpg",
         "category" => "Maharashtra",
         "link" => "maharashtra"
+    ],
+    [
+        "image" => "punjab.jpg",
+        "category" => "Punjab",
+        "link" => "punjab"
+    ],
+    [
+        "image" => "gujarat.jpg",
+        "category" => "Gujarat",
+        "link" => "gujarat"
+    ],
+    [
+        "image" => "haryana.jpg",
+        "category" => "Haryana",
+        "link" => "haryana"
+    ],
+    [
+        "image" => "telangana.jpg",
+        "category" => "Telangana",
+        "link" => "telangana"
+    ],
+    [
+        "image" => "tamil-nadu.jpg",
+        "category" => "Tamil Nadu",
+        "link" => "tamil-nadu"
     ]
 ];
 ?>
@@ -101,22 +126,25 @@ $state = [
             <?php foreach ($state as $item): 
                 $info_text = '';
                 $badge_text = 'Active Hub';
-                if (strtolower($item['category']) === 'delhi') {
-                    $info_text = 'National Capital Region, Noida, Gurgaon & hubs';
-                    $badge_text = '20+ Locations';
-                } elseif (strtolower($item['category']) === 'maharashtra') {
+                if (strtolower($item['category']) === 'maharashtra') {
                     $info_text = 'Mumbai, Pune, Nagpur & major commercial hubs';
+                    $badge_text = '20+ Locations';
+                } elseif (strtolower($item['category']) === 'punjab') {
+                    $info_text = 'Ludhiana, Jalandhar, Amritsar & major cities';
                     $badge_text = '15+ Locations';
-                } elseif (strtolower($item['category']) === 'bangalore') {
-                    $info_text = 'Silicon Valley, Electronic City & tech suburbs';
+                } elseif (strtolower($item['category']) === 'gujarat') {
+                    $info_text = 'Ahmedabad, Surat, Vadodara & major cities';
                     $badge_text = '12+ Locations';
-                } elseif (strtolower($item['category']) === 'west bengal') {
-                    $info_text = 'Kolkata, Siliguri, Howrah & metro zones';
+                } elseif (strtolower($item['category']) === 'haryana') {
+                    $info_text = 'Gurugram, Faridabad, Panipat & major cities';
                     $badge_text = '10+ Locations';
-                } elseif (strtolower($item['category']) === 'uttar pradesh') {
-                    $info_text = 'Noida, Lucknow, Kanpur & major cities';
+                } elseif (strtolower($item['category']) === 'telangana') {
+                    $info_text = 'Hyderabad, Secunderabad & major cities';
                     $badge_text = '8+ Locations';
-                }
+                } elseif (strtolower($item['category']) === 'tamil nadu') {
+                    $info_text = 'Chennai, Coimbatore, Madurai & major cities';
+                    $badge_text = '10+ Locations';
+                } 
             ?>
                 
                 <!-- Individual Column for 5-Cols System -->

@@ -8,6 +8,36 @@
   ====================================================== -->
 
 <aside class="pm-city-sidebar">
+  <?php if (!empty($branch_info) && !empty($branch_info['address'])): ?>
+  <!-- Local Branch Office Address Box -->
+  <div class="sidebar-widget widget-local-branch mb-4">
+      <div class="sidebar-title-header mb-3">
+          <h4 class="widget-title d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-danger"></i>
+              <span><?= $branch_info['title'] ?></span>
+          </h4>
+          <div class="title-underline"></div>
+      </div>
+      <div class="branch-address-box-body">
+          <p class="branch-manager-name mb-2 fw-bold text-dark">
+              <i class="bi bi-person-fill text-danger me-1"></i><?= $branch_info['manager'] ?>
+          </p>
+          <p class="branch-address-text mb-3 text-muted">
+              <?= $branch_info['address'] ?>
+          </p>
+          <div class="branch-contact-links d-flex flex-column gap-2">
+              <a href="<?= $branch_info['phonehtml'] ?>" class="text-dark text-decoration-none d-flex align-items-center gap-2 fw-semibold">
+                  <span class="badge bg-danger rounded-circle p-1"><i class="bi bi-telephone-fill text-white"></i></span>
+                  <span>+91 <?= $branch_info['phone'] ?></span>
+              </a>
+              <a href="<?= $branch_info['emailhtml'] ?>" class="text-dark text-decoration-none d-flex align-items-center gap-2 fw-semibold">
+                  <span class="badge bg-danger rounded-circle p-1"><i class="bi bi-envelope-fill text-white"></i></span>
+                  <span class="text-truncate"><?= $branch_info['email'] ?></span>
+              </a>
+          </div>
+      </div>
+  </div>
+  <?php endif; ?>
 
   <!-- Contact & Action CTA Widget -->
   <div class="sidebar-widget widget-contact-cta mb-4">
